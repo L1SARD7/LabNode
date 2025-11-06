@@ -2,4 +2,8 @@ import { Router } from "express";
 import { gamesService } from "../business/games-business-layer";
 
 export const GamesRouter = Router({});
-// Routes will be added in Lab 3
+
+GamesRouter.get('/', async (req, res) => {
+    const games = await gamesService.GetAllGames();
+    res.render('games-list', { games });
+});

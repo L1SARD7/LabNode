@@ -1,0 +1,14 @@
+<%- include('../templates/header') %>
+<h1>All Games</h1>
+<div class="games-container">
+    <% games.forEach(function(game) { %>
+        <div class="game-card">
+            <h2><%= game.title %></h2>
+            <p><strong>Genre:</strong> <%= game.genre %></p>
+            <p><strong>Year:</strong> <%= game.release_year %></p>
+            <a href="/games/<%= game.id %>">View Details</a>
+        </div>
+    <% }); %>
+</div>
+</body>
+</html>
