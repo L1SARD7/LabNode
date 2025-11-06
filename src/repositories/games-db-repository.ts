@@ -1,25 +1,34 @@
 import { GameViewModel } from "../models/GameViewModel";
-// import { pool } from "../db/db";
+
+const games: GameViewModel[] = [
+    {
+        id: 1,
+        title: "The Witcher 3",
+        genre: "RPG",
+        release_year: 2015,
+        developer: "CD Projekt Red",
+        description: "Geralt of Rivia searches for his adopted daughter.",
+        imageURL: "",
+        trailerYoutubeId: "",
+        bannerURL: "",
+        avgRating: "9.8"
+    },
+    {
+        id: 2,
+        title: "Cyberpunk 2077",
+        genre: "RPG",
+        release_year: 2020,
+        developer: "CD Projekt Red",
+        description: "A mercenary outlaw chasing a unique implant.",
+        imageURL: "",
+        trailerYoutubeId: "",
+        bannerURL: "",
+        avgRating: "8.5"
+    }
+];
 
 export const GamesRepository = {
     async GetAllGames(): Promise<GameViewModel[]> {
-        // SQL query placeholder
-        return [];
-    },
-
-    async GetGameByID(id: number): Promise<GameViewModel | null> {
-        return null;
-    },
-
-    async CreateNewGame(game: any): Promise<GameViewModel> {
-        return game;
-    },
-
-    async DeleteGame(id: number): Promise<boolean> {
-        return true;
-    },
-
-    async UpdateGame(id: number, data: any): Promise<boolean> {
-        return true;
+        return games;
     }
 }
