@@ -30,5 +30,9 @@ const games: GameViewModel[] = [
 export const GamesRepository = {
     async GetAllGames(): Promise<GameViewModel[]> {
         return games;
+    },
+
+    async GetGameByID(id: number): Promise<GameViewModel | null> {
+        return games.find(g => g.id === id) || null;
     }
 }
