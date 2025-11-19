@@ -1,60 +1,49 @@
+import { pool } from "../db/db";
 import { GameViewModel } from "../models/GameViewModel";
-
-let games: GameViewModel[] = [
-    {
-        id: 1,
-        title: "The Witcher 3",
-        genre: "RPG",
-        release_year: 2015,
-        developer: "CD Projekt Red",
-        description: "Geralt of Rivia searches for his adopted daughter.",
-        imageURL: "",
-        trailerYoutubeId: "",
-        bannerURL: "",
-        avgRating: "9.8"
-    },
-    {
-        id: 2,
-        title: "Cyberpunk 2077",
-        genre: "RPG",
-        release_year: 2020,
-        developer: "CD Projekt Red",
-        description: "A mercenary outlaw chasing a unique implant.",
-        imageURL: "",
-        trailerYoutubeId: "",
-        bannerURL: "",
-        avgRating: "8.5"
-    }
-];
 
 export const GamesRepository = {
     async GetAllGames(): Promise<GameViewModel[]> {
-        return games;
+        const result = await pool.query('SELECT * FROM games ORDER BY id ASC');
+        return result.rows.map(row => ({
+            id: row.id,
+            title: row.title,
+            genre: row.genre,
+            release_year: row.release_year,
+            developer: row.developer,
+            description: row.description,
+            imageURL: row.image_url,
+            trailerYoutubeId: row.trailer_youtube_id,
+            bannerURL: row.banner_url,
+            avgRating: row.avg_rating
+        }));
     },
 
     async GetGameByID(id: number): Promise<GameViewModel | null> {
-        return games.find(g => g.id === id) || null;
+        const result = await pool.query('SELECT * FROM games WHERE id = $1', [id]);
+        if (result.rows.length === 0) return null;
+        const row = result.rows[0];
+        return {
+            id: row.id,
+            title: row.title,
+            genre: row.genre,
+            release_year: row.release_year,
+            developer: row.developer,
+            description: row.description,
+            imageURL: row.image_url,
+            trailerYoutubeId: row.trailer_youtube_id,
+            bannerURL: row.banner_url,
+            avgRating: row.avg_rating
+        };
     },
 
+    // Заглушки для запису (щоб не ламати інтерфейс до наступного коміту)
     async CreateNewGame(game: any): Promise<GameViewModel> {
-        const newId = games.length > 0 ? Math.max(...games.map(g => g.id)) + 1 : 1;
-        const newGame = { ...game, id: newId };
-        games.push(newGame);
-        return newGame;
+        return game;
     },
-
     async DeleteGame(id: number): Promise<boolean> {
-        const initialLength = games.length;
-        games = games.filter(g => g.id !== id);
-        return games.length !== initialLength;
+        return true;
     },
-
     async UpdateGame(id: number, data: any): Promise<boolean> {
-        const index = games.findIndex(g => g.id === id);
-        if (index > -1) {
-            games[index] = { ...games[index], ...data };
-            return true;
-        }
-        return false;
+        return true;
     }
 }
