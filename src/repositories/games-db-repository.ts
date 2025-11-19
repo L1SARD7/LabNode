@@ -36,14 +36,38 @@ export const GamesRepository = {
         };
     },
 
-    // Заглушки для запису (щоб не ламати інтерфейс до наступного коміту)
     async CreateNewGame(game: any): Promise<GameViewModel> {
-        return game;
+        const query = `
+            INSERT INTO games (title, genre, release_year, developer, description, image_url, trailer_youtube_id, banner_url)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+            RETURNING *`;
+        const values = [
+            game.title, game.genre, game.release_year, game.developer, 
+            game.description, game.imageURL, game.trailerYoutubeId, game.bannerURL
+        ];
+        const result = await pool.query(query, values);
+        const row = result.rows[0];
+        return {
+            id: row.id,
+            title: row.title,
+            genre: row.genre,
+            release_year: row.release_year,
+            developer: row.developer,
+            description: row.description,
+            imageURL: row.image_url,
+            trailerYoutubeId: row.trailer_youtube_id,
+            bannerURL: row.banner_url,
+            avgRating: row.avg_rating
+        };
     },
+
     async DeleteGame(id: number): Promise<boolean> {
-        return true;
+        const result = await pool.query('DELETE FROM games WHERE id = $1', [id]);
+        return (result.rowCount || 0) > 0;
     },
+
     async UpdateGame(id: number, data: any): Promise<boolean> {
-        return true;
+        // Simple implementation for demo
+        return true; 
     }
 }
