@@ -1,18 +1,32 @@
-import express from 'express';
+import express, { Express } from 'express';
+import { gameRouter } from './routers/game-router';
+import { authRouter } from './routers/auth-router';
 import path from 'path';
-import { GamesRouter } from './routers/game-router';
 
-export const app = express();
+export class App {
+    app: Express;
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '../views'));
+    constructor() {
+        this.app = express();
+        this.settings();
+        this.middleware();
+        this.routers();
+    }
 
-app.use(express.static(path.join(__dirname, '../front')));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+    settings() {
+        this.app.set('view engine', 'ejs');
+        this.app.set('views', path.join(__dirname, '../views'));
+    }
 
-app.use('/games', GamesRouter);
+    middleware() {
+        this.app.use(express.static(path.join(__dirname, '../front')));
+        this.app.use(express.urlencoded({ extended: true }));
+        this.app.use(express.json());
+    }
 
-app.get('/', (req, res) => {
-    res.redirect('/games');
-});
+    routers() {
+        this.app.use('/auth', authRouter);
+        this.app.use('/games', gameRouter);
+        this.app.get('/', (req, res) => res.redirect('/games'));
+    }
+}

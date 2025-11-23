@@ -1,0 +1,17 @@
+<%- include('../templates/header.ejs') %>
+<main class="container my-5">
+    <h1>Login</h1>
+    <form action="/auth/login" method="POST" style="max-width: 400px;">
+        <div class="mb-3">
+            <label>Login</label>
+            <input type="text" name="login" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-success">Login</button>
+        <a href="/auth/register" class="btn btn-link">Create account</a>
+    </form>
+</main>
+</body></html>
