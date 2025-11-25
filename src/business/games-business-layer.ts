@@ -1,22 +1,20 @@
-import { GamesRepository } from "../repositories/games-db-repository";
+import { gamesRepository } from '../repositories/games-db-repository';
+import { GameViewModel } from '../models/GameViewModel';
 
-export const gamesService = {
-    async GetAllGames() {
-        return await GamesRepository.GetAllGames();
+export const gameService = {
+    async getAllGames(): Promise<GameViewModel[]> {
+        return await gamesRepository.getAllGames();
     },
 
-    async GetGameByID(id: number) {
-        return await GamesRepository.GetGameByID(id);
+    async getGameById(id: number): Promise<GameViewModel | null> {
+        return await gamesRepository.getGameById(id);
     },
 
-    async CreateNewGame(title: string, genre: string, release_year: number, developer: string, description: string, imageURL: string, trailerYoutubeId: string, bannerURL: string) {
-        const newGame = {
-            title, genre, release_year, developer, description, imageURL, trailerYoutubeId, bannerURL
-        };
-        return await GamesRepository.CreateNewGame(newGame);
+    async createGame(title: string, developer: string, year: number, genre: string, description: string) {
+        await gamesRepository.createGame({ title, developer, year, genre, description });
     },
 
-    async DeleteGame(id: number) {
-        return await GamesRepository.DeleteGame(id);
+    async deleteGame(id: number) {
+        await gamesRepository.deleteGame(id);
     }
-}
+};

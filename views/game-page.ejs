@@ -1,13 +1,54 @@
-<%- include('../templates/header') %>
-<div class="game-details">
-    <h1><%= game.title %></h1>
-    <p><strong>Developer:</strong> <%= game.developer %></p>
-    <p><strong>Year:</strong> <%= game.release_year %></p>
-    <p><strong>Genre:</strong> <%= game.genre %></p>
-    <hr>
-    <p><%= game.description %></p>
-    <br>
-    <a href="/games">Back to list</a>
-</div>
-</body>
-</html>
+<%- include('../templates/header.ejs') %>
+<main class="container my-5">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="<%= game.imageUrl %>" class="img-fluid rounded shadow" alt="<%= game.title %>">
+        </div>
+        <div class="col-md-7">
+            <h1 class="text-white"><%= game.title %></h1>
+            <div class="badge bg-warning text-dark mb-3 fs-5">Rating: <%= game.rating %></div>
+            <p class="text-muted fs-5"><%= game.developer %> | <%= game.releaseYear %> | <%= game.genre %></p>
+            <p class="lead text-white"><%= game.description %></p>
+            
+            <a href="/games" class="btn btn-outline-light mt-3">Back to List</a>
+
+            <hr class="text-white my-5">
+            
+            <h3 class="text-white mb-4">Community Reviews</h3>
+            
+            <% if (reviews && reviews.length > 0) { %>
+                <div class="list-group mb-4">
+                <% reviews.forEach(function(review) { %>
+                    <div class="list-group-item bg-dark text-white border-secondary">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"><%= review.author_name %></h5>
+                            <small class="text-warning">★ <%= review.rating %>/10</small>
+                        </div>
+                        <p class="mb-1"><%= review.comment %></p>
+                        <small class="text-muted"><%= new Date(review.created_at).toLocaleDateString() %></small>
+                    </div>
+                <% }); %>
+                </div>
+            <% } else { %>
+                <div class="alert alert-secondary">No reviews yet. Be the first to share your thoughts!</div>
+            <% } %>
+
+            <div class="card bg-secondary text-white p-3">
+                <h5 class="card-title">Write a Review</h5>
+                <form action="/games/<%= game.id %>/reviews" method="POST">
+                    <div class="mb-2">
+                        <input type="text" name="author" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-2">
+                        <input type="number" name="rating" min="1" max="10" class="form-control" placeholder="Rating (1-10)" required>
+                    </div>
+                    <div class="mb-2">
+                        <textarea name="comment" class="form-control" placeholder="Your experience..." rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">Post Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+</body></html>
