@@ -7,11 +7,11 @@ export const gameService = {
     },
 
     async getGameById(id: number): Promise<GameViewModel | null> {
-        return await gamesRepository.getGameById(id);
+        return await gamesRepository.getGameByID(id);
     },
 
     async createGame(title: string, developer: string, year: number, genre: string, description: string) {
-        await gamesRepository.createGame({ title, developer, year, genre, description });
+        await gamesRepository.createNewGame({ title, developer, year, genre, description });
     },
 
     async deleteGame(id: number) {

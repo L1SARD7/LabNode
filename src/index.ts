@@ -1,13 +1,11 @@
-import { app } from './app';
-import { runDB } from './db/db';
+import { App } from './app';
+import dotenv from 'dotenv';
 
-const PORT = process.env.PORT || 3000;
+dotenv.config();
 
-const startApp = async () => {
-    await runDB();
-    app.listen(PORT, () => {
-        console.log(`Server started on port ${PORT}`);
-    });
-};
+const port = process.env.PORT || 3000;
+const app = new App().app;
 
-startApp();
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+});

@@ -1,8 +1,8 @@
 import { pool } from "../db/db";
 import { GameViewModel } from "../models/GameViewModel";
 
-export const GamesRepository = {
-    async GetAllGames(): Promise<GameViewModel[]> {
+export const gamesRepository = {
+    async getAllGames(): Promise<GameViewModel[]> {
         const result = await pool.query('SELECT * FROM games ORDER BY id ASC');
         return result.rows.map(row => ({
             id: row.id,
@@ -18,7 +18,7 @@ export const GamesRepository = {
         }));
     },
 
-    async GetGameByID(id: number): Promise<GameViewModel | null> {
+    async getGameByID(id: number): Promise<GameViewModel | null> {
         const result = await pool.query('SELECT * FROM games WHERE id = $1', [id]);
         if (result.rows.length === 0) return null;
         const row = result.rows[0];
@@ -36,7 +36,7 @@ export const GamesRepository = {
         };
     },
 
-    async CreateNewGame(game: any): Promise<GameViewModel> {
+    async createNewGame(game: any): Promise<GameViewModel> {
         const query = `
             INSERT INTO games (title, genre, release_year, developer, description, image_url, trailer_youtube_id, banner_url)
             VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
@@ -61,13 +61,12 @@ export const GamesRepository = {
         };
     },
 
-    async DeleteGame(id: number): Promise<boolean> {
+    async deleteGame(id: number): Promise<boolean> {
         const result = await pool.query('DELETE FROM games WHERE id = $1', [id]);
         return (result.rowCount || 0) > 0;
     },
 
-    async UpdateGame(id: number, data: any): Promise<boolean> {
-        // Simple implementation for demo
+    async updateGame(id: number, data: any): Promise<boolean> {
         return true; 
     }
 }
