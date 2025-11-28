@@ -1,14 +1,42 @@
-<%- include('../templates/header') %>
-<h1>All Games</h1>
-<div class="games-container">
-    <% games.forEach(function(game) { %>
-        <div class="game-card">
-            <h2><%= game.title %></h2>
-            <p><strong>Genre:</strong> <%= game.genre %></p>
-            <p><strong>Year:</strong> <%= game.release_year %></p>
-            <a href="/games/<%= game.id %>">View Details</a>
-        </div>
-    <% }); %>
-</div>
+<%- include('../templates/header.ejs') %>
+
+<main class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-white">Game Library</h1>
+        <a href="/games/new" class="btn btn-primary">+ Add New Game</a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% games.forEach(function(game) { %>
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-secondary shadow-sm game-card">
+                    <img src="<%= game.imageUrl %>" class="card-img-top" alt="<%= game.title %>" style="height: 200px; object-fit: cover;">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title fw-bold"><%= game.title %></h5>
+                            <span class="badge bg-warning text-dark">★ <%= game.rating %></span>
+                        </div>
+                        
+                        <h6 class="card-subtitle mb-2 text-muted"><%= game.developer %> | <%= game.releaseYear %></h6>
+                        
+                        <p class="card-text flex-grow-1 text-secondary">
+                            <%= game.description.length > 100 ? game.description.substring(0, 100) + '...' : game.description %>
+                        </p>
+                        
+                        <div class="d-flex justify-content-between mt-3">
+                            <a href="/games/<%= game.id %>" class="btn btn-outline-info btn-sm">Read More</a>
+                            
+                            <form action="/games/<%= game.id %>/delete" method="POST" onsubmit="return confirm('Delete this game?');">
+                                <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</main>
+
 </body>
 </html>
