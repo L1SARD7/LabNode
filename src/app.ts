@@ -15,11 +15,11 @@ export class App {
 
     settings() {
         this.app.set('view engine', 'ejs');
-        this.app.set('views', path.join(__dirname, '../views'));
+        this.app.set('views', path.join(process.cwd(), 'views'));
     }
 
     middleware() {
-        this.app.use(express.static(path.join(__dirname, '../front')));
+        this.app.use(express.static(path.join(process.cwd(), 'front')));
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(express.json());
     }
