@@ -10,6 +10,7 @@ gameRouter.get('/', async (req, res) => {
         const games = await gameService.getAllGames();
         res.render('games-list', { games });
     } catch (e) {
+        console.error("GET /games Error:", e);
         res.status(500).send('DB Error');
     }
 });
@@ -22,13 +23,19 @@ gameRouter.post('/', async (req, res) => {
         await gameService.createGame(title, developer, Number(year), genre, description);
         res.redirect('/games');
     } catch (e) {
+        console.error("POST /games Error:", e);
         res.status(500).send('Creation Error');
     }
 });
 
 gameRouter.post('/:id/delete', async (req, res) => {
-    await gameService.deleteGame(Number(req.params.id));
-    res.redirect('/games');
+    try {
+        await gameService.deleteGame(Number(req.params.id));
+        res.redirect('/games');
+    } catch (e) {
+        console.error("DELETE Error:", e);
+        res.status(500).send('Delete Error');
+    }
 });
 
 gameRouter.get('/:id', async (req, res) => {
@@ -41,16 +48,22 @@ gameRouter.get('/:id', async (req, res) => {
         
         res.render('game-page', { game, reviews });
     } catch (e) {
+        console.error("GET /games/:id Error:", e);
         res.status(500).send('Error');
     }
 });
 
 gameRouter.post('/:id/reviews', async (req, res) => {
-    const error = inputValidator.validateReview(req.body);
-    if (error) return res.status(400).send(error);
+    try {
+        const error = inputValidator.validateReview(req.body);
+        if (error) return res.status(400).send(error);
 
-    const id = Number(req.params.id);
-    const { author, rating, comment } = req.body;
-    await reviewService.addReview(id, author, Number(rating), comment);
-    res.redirect('/games/' + id);
+        const id = Number(req.params.id);
+        const { author, rating, comment } = req.body;
+        await reviewService.addReview(id, author, Number(rating), comment);
+        res.redirect('/games/' + id);
+    } catch (e) {
+        console.error("POST Review Error:", e);
+        res.status(500).send('Review Error');
+    }
 });

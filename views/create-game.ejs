@@ -1,0 +1,48 @@
+<%- include('../templates/header.ejs') %>
+
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card bg-dark text-white border-secondary game-card">
+                <div class="card-header border-secondary">
+                    <h2 class="mb-0">Add New Game</h2>
+                </div>
+                <div class="card-body">
+                    <form action="/games" method="POST">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" name="title" required>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="developer" class="form-label">Developer</label>
+                                <input type="text" class="form-control" id="developer" name="developer" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="year" class="form-label">Year</label>
+                                <input type="number" class="form-control" id="year" name="year" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="genre" class="form-label">Genre</label>
+                                <input type="text" class="form-control" id="genre" name="genre" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="/games" class="btn btn-outline-light">Cancel</a>
+                            <button type="submit" class="btn btn-primary px-4">Create Game</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
