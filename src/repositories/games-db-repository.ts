@@ -8,14 +8,15 @@ export const gamesRepository = {
             FROM games ORDER BY id DESC
         `;
         const result = await pool.query(query);
+        
         return result.rows.map(row => ({
             id: row.id,
             title: row.title,
             genre: row.genre,
-            releaseYear: row.release_year,
+            releaseYear: row.release_year, // Мапимо release_year -> releaseYear
             developer: row.developer,
             description: row.description,
-            imageUrl: row.image_url,
+            imageUrl: row.image_url,       // Мапимо image_url -> imageUrl
             rating: Number(row.avg_rating)
         }));
     },
