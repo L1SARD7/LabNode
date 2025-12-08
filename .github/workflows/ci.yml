@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-      # GitHub автоматично підніме контейнер з Postgres для тестів
       postgres:
         image: postgres:15
         env:
@@ -39,23 +38,19 @@ jobs:
       run: npm ci
 
     - name: Run Linter
-      # Перевірка стилю коду
       run: npm run lint
 
     - name: Build Project
-      # Перевірка, чи збирається TypeScript без помилок
       run: npm run build
 
     - name: Initialize Database
-      # Накочуємо структуру таблиць перед тестами
       env:
         PGPASSWORD: test_password
       run: |
         sudo apt-get install -y postgresql-client
-        psql -h localhost -U test_user -d games_db -f src/db/init.sql
+        psql -h localhost -U test_user -d games_db -f src/init.sql
 
     - name: Run Tests
-      # Запускаємо Jest (Unit + Integration)
       env:
         DB_USER: test_user
         DB_PASSWORD: test_password
