@@ -16,5 +16,5 @@ export const gameService = {
 
     async deleteGame(id: number) {
         await gamesRepository.deleteGame(id);
-    }
+    },
 };

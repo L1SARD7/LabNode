@@ -46,7 +46,7 @@ export function setAuthCookie(res: Response, user: AuthUser) {
     const token = encodeToken(user);
     res.cookie('authToken', token, {
         httpOnly: true,
-        sameSite: 'lax'
+        sameSite: 'lax',
     });
 }
 

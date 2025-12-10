@@ -12,5 +12,5 @@ export const userRepository = {
         const query = 'SELECT * FROM users WHERE login = $1';
         const result = await pool.query(query, [login]);
         return result.rows[0] || null;
-    }
+    },
 };

@@ -7,8 +7,7 @@ export const AUTH_COOKIE_NAME = 'token';
 
 const base64UrlEncode = (input: string) => Buffer.from(input).toString('base64url');
 
-const buildSignature = (data: string) =>
-    crypto.createHmac('sha256', JWT_SECRET).update(data).digest('base64url');
+const buildSignature = (data: string) => crypto.createHmac('sha256', JWT_SECRET).update(data).digest('base64url');
 
 export const createAuthToken = (user: UserViewModel, ttlSeconds = 60 * 60 * 24 * 7) => {
     const header = { alg: 'HS256', typ: 'JWT' };
@@ -52,11 +51,14 @@ export const verifyAuthToken = (token?: string): UserViewModel | null => {
 const parseCookies = (cookieHeader?: string) => {
     if (!cookieHeader) return {} as Record<string, string>;
 
-    return cookieHeader.split(';').reduce((acc, cookie) => {
-        const [key, ...val] = cookie.trim().split('=');
-        if (key) acc[key] = decodeURIComponent(val.join('='));
-        return acc;
-    }, {} as Record<string, string>);
+    return cookieHeader.split(';').reduce(
+        (acc, cookie) => {
+            const [key, ...val] = cookie.trim().split('=');
+            if (key) acc[key] = decodeURIComponent(val.join('='));
+            return acc;
+        },
+        {} as Record<string, string>,
+    );
 };
 
 export const restoreUser = (req: Request, res: Response, next: NextFunction) => {

@@ -8,16 +8,16 @@ export const gamesRepository = {
             FROM games ORDER BY id DESC
         `;
         const result = await pool.query(query);
-        
-        return result.rows.map(row => ({
+
+        return result.rows.map((row) => ({
             id: row.id,
             title: row.title,
             genre: row.genre,
             releaseYear: row.release_year, // Мапимо release_year -> releaseYear
             developer: row.developer,
             description: row.description,
-            imageUrl: row.image_url,       // Мапимо image_url -> imageUrl
-            rating: Number(row.avg_rating)
+            imageUrl: row.image_url, // Мапимо image_url -> imageUrl
+            rating: Number(row.avg_rating),
         }));
     },
 
@@ -36,11 +36,17 @@ export const gamesRepository = {
             developer: row.developer,
             description: row.description,
             imageUrl: row.image_url,
-            rating: Number(row.avg_rating)
+            rating: Number(row.avg_rating),
         };
     },
-    
-    async createGame(data: { title: string; developer: string; year: number; genre: string; description: string }): Promise<void> {
+
+    async createGame(data: {
+        title: string;
+        developer: string;
+        year: number;
+        genre: string;
+        description: string;
+    }): Promise<void> {
         const query = `
             INSERT INTO games (title, developer, release_year, genre, description, avg_rating, image_url)
             VALUES ($1, $2, $3, $4, $5, 0, 'https://placehold.co/600x400?text=No+Image')
@@ -51,5 +57,5 @@ export const gamesRepository = {
     async deleteGame(id: number): Promise<void> {
         const query = 'DELETE FROM games WHERE id = $1';
         await pool.query(query, [id]);
-    }
+    },
 };

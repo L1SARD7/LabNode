@@ -6,4 +6,5 @@ declare global {
             user?: UserViewModel;
         }
     }
-}s
+}
+s;

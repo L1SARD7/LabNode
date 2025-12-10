@@ -4,7 +4,6 @@ import { reviewService } from '../business/reviews-business-layer';
 import { inputValidator } from '../validator/input-validator';
 import { requireAuth } from '../middleware/auth-session';
 
-
 export const gameRouter = Router();
 
 gameRouter.get('/', async (req, res) => {
@@ -12,7 +11,7 @@ gameRouter.get('/', async (req, res) => {
         const games = await gameService.getAllGames();
         res.render('games-list', { games });
     } catch (e) {
-        console.error("GET /games Error:", e);
+        console.error('GET /games Error:', e);
         res.status(500).send('DB Error');
     }
 });
@@ -24,7 +23,7 @@ gameRouter.post('/', requireAuth, async (req, res) => {
         await gameService.createGame(title, developer, Number(year), genre, description);
         res.redirect('/games');
     } catch (e) {
-        console.error("POST /games Error:", e);
+        console.error('POST /games Error:', e);
         res.status(500).send('Creation Error');
     }
 });
@@ -34,7 +33,7 @@ gameRouter.post('/:id/delete', async (req, res) => {
         await gameService.deleteGame(Number(req.params.id));
         res.redirect('/games');
     } catch (e) {
-        console.error("DELETE Error:", e);
+        console.error('DELETE Error:', e);
         res.status(500).send('Delete Error');
     }
 });
@@ -44,12 +43,12 @@ gameRouter.get('/:id', async (req, res) => {
         const id = Number(req.params.id);
         const game = await gameService.getGameById(id);
         if (!game) return res.status(404).send('Not found');
-        
+
         const reviews = await reviewService.getGameReviews(id);
-        
+
         res.render('game-page', { game, reviews });
     } catch (e) {
-        console.error("GET /games/:id Error:", e);
+        console.error('GET /games/:id Error:', e);
         res.status(500).send('Error');
     }
 });
@@ -71,7 +70,7 @@ gameRouter.post('/:id/reviews', async (req, res) => {
 
         res.render('game-page', { game: updatedGame, reviews });
     } catch (e) {
-        console.error("POST Review Error:", e);
+        console.error('POST Review Error:', e);
         res.status(500).send('Review Error');
     }
 });
