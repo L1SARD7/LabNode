@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: gamepedia-app
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: PGPASSWORD=$DB_PASSWORD psql -h $DB_HOST -U $DB_USER -d $DB_NAME -f src/init.sql && node dist/index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: DB_HOST
+        fromDatabase:
+          name: gamepedia-db
+          property: host
+      - key: DB_USER
+        fromDatabase:
+          name: gamepedia-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: gamepedia-db
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: gamepedia-db
+          property: database
+      - key: DB_PORT
+        fromDatabase:
+          name: gamepedia-db
+          property: port
+
+databases:
+  - name: gamepedia-db
+    plan: free
+    databaseName: games_db
+    user: admin_user

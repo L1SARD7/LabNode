@@ -3,9 +3,10 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// Використовуємо порт від Render або 3000 локально
 const port = process.env.PORT || 3000;
-const app = new App().app;
+const server = new App().app;
 
-app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
+server.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
