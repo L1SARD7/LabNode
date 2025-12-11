@@ -7,9 +7,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: \${{ secrets.RENDER_DEPLOY_HOOK != '' }}
+    env:
+      RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
     steps:
+      - name: Skip deploy (missing hook)
+        if: ${{ env.RENDER_DEPLOY_HOOK == '' }}
+        run: echo "RENDER_DEPLOY_HOOK is not set; skipping deploy."
       - name: Trigger Render Deploy Hook
-        env:
-          RENDER_DEPLOY_HOOK: \${{ secrets.RENDER_DEPLOY_HOOK }}
-        run: curl -fsS -X POST "\$RENDER_DEPLOY_HOOK"
+        if: ${{ env.RENDER_DEPLOY_HOOK != '' }}
+        run: curl -fsS -X POST "$RENDER_DEPLOY_HOOK"
