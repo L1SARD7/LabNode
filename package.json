@@ -9,7 +9,9 @@
     "test": "jest",
     "test:mutation": "stryker run",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "load:test": "node performance/load-test.js"
   },
   "dependencies": {
     "ejs": "^3.1.9",
