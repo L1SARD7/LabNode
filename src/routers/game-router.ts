@@ -60,8 +60,15 @@ gameRouter.post('/:id/reviews', async (req, res) => {
 
         const id = Number(req.params.id);
         const { author, rating, comment } = req.body;
-        await reviewService.addReview(id, author, Number(rating), comment);
-        res.redirect('/games/' + id);
+        const newRating = await reviewService.addReview(id, author, Number(rating), comment);
+
+        const game = await gameService.getGameById(id);
+        if (!game) return res.status(404).send('Not found');
+
+        const reviews = await reviewService.getGameReviews(id);
+        const updatedGame = { ...game, rating: newRating ?? game.rating };
+
+        res.render('game-page', { game: updatedGame, reviews });
     } catch (e) {
         console.error("POST Review Error:", e);
         res.status(500).send('Review Error');

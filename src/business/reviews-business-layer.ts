@@ -6,6 +6,6 @@ export const reviewService = {
     },
 
     async addReview(gameId: number, author: string, rating: number, comment: string) {
-        await reviewsRepository.addReview(gameId, author, rating, comment);
+         return await reviewsRepository.addReview(gameId, author, rating, comment);
     }
 };
