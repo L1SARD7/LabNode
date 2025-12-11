@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { userService } from '../business/user-business-layer';
 import { inputValidator } from '../validator/input-validator';
+import { clearAuthCookie, createAuthToken, setAuthCookie } from '../middleware/auth-middleware';
 
 export const authRouter = Router();
 
@@ -24,6 +25,8 @@ authRouter.post('/login', async (req, res) => {
     try {
         const user = await userService.checkCredentials(req.body.login, req.body.password);
         if (user) {
+            const token = createAuthToken(user);
+            setAuthCookie(res, token);
             res.redirect('/games');
         } else {
             res.status(401).send('Invalid credentials');
@@ -31,4 +34,14 @@ authRouter.post('/login', async (req, res) => {
     } catch (e) {
         res.status(500).send('Login error');
     }
+});
+
+authRouter.post('/logout', (req, res) => {
+    clearAuthCookie(res);
+    res.redirect('/auth/login');
+});
+
+authRouter.post('/logout', (req, res) => {
+    clearAuthCookie(res);
+    res.redirect('/auth/login');
 });

@@ -35,18 +35,20 @@
 
             <div class="card review-card p-3">
                 <h5 class="card-title">Write a Review</h5>
-                <form action="/games/<%= game.id %>/reviews" method="POST">
-                    <div class="mb-2">
-                        <input type="text" name="author" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="mb-2">
-                        <input type="number" name="rating" min="1" max="10" class="form-control" placeholder="Rating (1-10)" required>
-                    </div>
-                    <div class="mb-2">
-                        <textarea name="comment" class="form-control" placeholder="Your experience..." rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-warning w-100">Post Review</button>
-                </form>
+                <% if (user) { %>
+                    <p class="text-light">Posting as <strong><%= user.login %></strong></p>
+                    <form action="/games/<%= game.id %>/reviews" method="POST">
+                        <div class="mb-2">
+                            <input type="number" name="rating" min="1" max="10" class="form-control" placeholder="Rating (1-10)" required>
+                        </div>
+                        <div class="mb-2">
+                            <textarea name="comment" class="form-control" placeholder="Your experience..." rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Post Review</button>
+                    </form>
+                <% } else { %>
+                    <div class="alert alert-dark mb-0">Please <a href="/auth/login" class="text-warning">log in</a> to leave a review.</div>
+                <% } %>
             </div>
         </div>
     </div>

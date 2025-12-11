@@ -2,6 +2,8 @@ import express, { Express } from 'express';
 import { gameRouter } from './routers/game-router';
 import { authRouter } from './routers/auth-router';
 import path from 'path';
+import { authSessionMiddleware } from './middleware/auth-session';
+import { restoreUser } from './middleware/auth-middleware';
 
 export class App {
     app: Express;
@@ -22,6 +24,8 @@ export class App {
         this.app.use(express.static(path.join(process.cwd(), 'front')));
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(express.json());
+        this.app.use(authSessionMiddleware);
+        this.app.use(restoreUser);
     }
 
     routers() {

@@ -1,10 +1,15 @@
 import request from 'supertest';
 import { App } from '../../src/app';
 import dotenv from 'dotenv';
+import { AUTH_COOKIE_NAME, createAuthToken } from '../../src/middleware/auth-middleware';
+import { UserViewModel } from '../../src/models/UserViewModel';
 
 dotenv.config();
 
 const app = new App().app;
+
+const testUser: UserViewModel = { id: 1, login: 'tester', email: 'tester@example.com' };
+const authCookie = `${AUTH_COOKIE_NAME}=${createAuthToken(testUser)}`;
 
 describe('Game API Integration Tests', () => {
     
@@ -37,10 +42,20 @@ describe('Game API Integration Tests', () => {
 
         const res = await request(app)
             .post('/games')
+            .set('Cookie', authCookie)
             .type('form')
             .send(newGame);
 
         expect(res.status).toBe(302);
         expect(res.header.location).toBe('/games');
+
+        it('should block creating a game without authentication', async () => {
+        const res = await request(app)
+            .post('/games')
+            .type('form')
+            .send({});
+
+        expect(res.status).toBe(401);
+    });
     });
 });

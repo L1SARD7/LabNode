@@ -2,6 +2,8 @@ import { Router, Request, Response } from 'express';
 import { gameService } from '../business/games-business-layer';
 import { reviewService } from '../business/reviews-business-layer';
 import { inputValidator } from '../validator/input-validator';
+import { requireAuth } from '../middleware/auth-session';
+
 
 export const gameRouter = Router();
 
@@ -15,9 +17,8 @@ gameRouter.get('/', async (req, res) => {
     }
 });
 
-gameRouter.get('/new', (req, res) => res.render('create-game'));
-
-gameRouter.post('/', async (req, res) => {
+gameRouter.get('/new', requireAuth, (req, res) => res.render('create-game'));
+gameRouter.post('/', requireAuth, async (req, res) => {
     try {
         const { title, developer, year, genre, description } = req.body;
         await gameService.createGame(title, developer, Number(year), genre, description);

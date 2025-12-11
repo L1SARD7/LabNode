@@ -3,7 +3,11 @@
 <main class="container my-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="text-white">Game Library</h1>
-        <a href="/games/new" class="btn btn-primary">+ Add New Game</a>
+        <% if (user) { %>
+            <a href="/games/new" class="btn btn-primary">+ Add New Game</a>
+        <% } else { %>
+            <a href="/auth/login" class="btn btn-outline-light">Login to add games</a>
+        <% } %>
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
