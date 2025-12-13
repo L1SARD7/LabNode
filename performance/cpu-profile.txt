@@ -1,0 +1,1900 @@
+Statistical profiling result from isolate-0x7fa066300000-19236-v8.log, (22789 ticks, 16075 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    462    2.0%    2.0%  RegExp: [ \t]*<%_
+    374    1.6%    1.6%  Builtin: LoadIC_Megamorphic
+    283    1.2%    1.2%  Builtin: LoadIC
+    265    1.2%    1.2%  Builtin: StringAdd_CheckNone
+    226    1.0%    1.0%  Builtin: KeyedLoadIC_Megamorphic
+    126    0.6%    0.6%  Builtin: KeyedStoreIC_Megamorphic
+    118    0.5%    0.5%  Builtin: StringIndexOf
+    115    0.5%    0.5%  RegExp: [ \t]*<%_ {1}
+    112    0.5%    0.5%  Builtin: SubString
+    101    0.4%    0.4%  Builtin: RegExpReplace
+     99    0.4%    0.4%  Builtin: RecordWriteSaveFP
+     99    0.4%    0.4%  Builtin: CompileLazy
+     97    0.4%    0.4%  JS: *scanLine /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:815:22
+     96    0.4%    0.4%  Builtin: StoreIC_Megamorphic
+     85    0.4%    0.4%  Builtin: RegExpPrototypeExec
+     82    0.4%    0.4%  Builtin: CallFunction_ReceiverIsAny
+     81    0.4%    0.4%  Builtin: StoreIC
+     70    0.3%    0.3%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+     65    0.3%    0.3%  RegExp: (<%%|%%>|<%=|<%-|<%_|<%#|<%|%>|-%>|_%>) {1}
+     61    0.3%    0.3%  Builtin: KeyedStoreIC
+     60    0.3%    0.3%  JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+     57    0.3%    0.3%  Builtin: CallFunction_ReceiverIsNotNullOrUndefined
+     54    0.2%    0.2%  JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+     53    0.2%    0.2%  JS: *parseField /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:185:15
+     51    0.2%    0.2%  Builtin: BaselineOutOfLinePrologue
+     50    0.2%    0.2%  Builtin: LoadICTrampoline_Megamorphic
+     49    0.2%    0.2%  Builtin: StringPrototypeReplace
+     44    0.2%    0.2%  Builtin: StringEqual
+     42    0.2%    0.2%  JS: *writevGeneric node:internal/stream_base_commons:123:23
+     42    0.2%    0.2%  Builtin: RegExpExecAtom
+     38    0.2%    0.2%  Builtin: StringSubstring
+     37    0.2%    0.2%  Builtin: LoadICTrampoline
+     33    0.1%    0.1%  JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     32    0.1%    0.1%  JS: *onwrite node:internal/streams/writable:613:17
+     30    0.1%    0.1%  Builtin: CallApiCallbackOptimizedNoProfiling
+     29    0.1%    0.1%  JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+     29    0.1%    0.1%  Builtin: Call_ReceiverIsNullOrUndefined
+     29    0.1%    0.1%  Builtin: Call_ReceiverIsAny
+     28    0.1%    0.1%  JS: *resolve node:path:1095:10
+     28    0.1%    0.1%  Builtin: KeyedLoadIC
+     27    0.1%    0.1%  Builtin: JSBuiltinsConstructStub
+     26    0.1%    0.1%  Builtin: CreateTypedArray
+     25    0.1%    0.1%  JS: *normalize node:path:1130:12
+     25    0.1%    0.1%  JS: *nextTick node:internal/process/task_queues:103:18
+     25    0.1%    0.1%  Builtin: ObjectPrototypeHasOwnProperty
+     24    0.1%    0.1%  RegExp: _%>[ \t]*
+     24    0.1%    0.1%  JS: *emit node:events:467:44
+     23    0.1%    0.1%  JS: *processPromiseRejections node:internal/process/promises:436:34
+     23    0.1%    0.1%  Builtin: KeyedLoadICTrampoline_Megamorphic
+     22    0.1%    0.1%  Builtin: FastNewFunctionContextFunction
+     21    0.1%    0.1%  RegExp: (<%%|%%>|<%=|<%-|<%_|<%#|<%|%>|-%>|_%>)
+     21    0.1%    0.1%  JS: *parse /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:24:10
+     21    0.1%    0.1%  JS: *handlePacket /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:89:17
+     21    0.1%    0.1%  Builtin: CallBoundFunction
+     21    0.1%    0.1%  Builtin: CEntry_Return1_ArgvOnStack_NoBuiltinExit
+     20    0.1%    0.1%  JS: *clearBuffer node:internal/streams/writable:742:21
+     20    0.1%    0.1%  Builtin: StringPrototypeSplit
+     20    0.1%    0.1%  Builtin: LoadGlobalIC
+     19    0.1%    0.1%  JS: +resOnFinish node:_http_server:978:21
+     19    0.1%    0.1%  JS: *parseTemplateText /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:761:31
+     19    0.1%    0.1%  Builtin: StringToLowerCaseIntl
+     19    0.1%    0.1%  Builtin: RegExpPrototypeTestFast
+     19    0.1%    0.1%  Builtin: RegExpPrototypeTest
+     19    0.1%    0.1%  Builtin: Call_ReceiverIsNotNullOrUndefined
+     18    0.1%    0.1%  JS: +onStreamRead node:internal/stream_base_commons:168:22
+     18    0.1%    0.1%  JS: *setStreamTimeout node:internal/stream_base_commons:238:26
+     18    0.1%    0.1%  JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+     18    0.1%    0.1%  JS: *_storeHeader node:_http_outgoing:458:22
+     18    0.1%    0.1%  Builtin: KeyedLoadIC_PolymorphicName
+     17    0.1%    0.1%  Builtin: ArrayPrototypePush
+     16    0.1%    0.1%  JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+     16    0.1%    0.1%  JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+     16    0.1%    0.1%  JS: *header /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:777:29
+     16    0.1%    0.1%  JS: *createError /Users/mac/Desktop/Node/LabNode/node_modules/http-errors/index.js:49:22
+     16    0.1%    0.1%  JS: *_handleRowDescription /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:369:24
+     16    0.1%    0.1%  Builtin: ToBooleanForBaselineJump
+     16    0.1%    0.1%  Builtin: GetProperty
+     16    0.1%    0.1%  Builtin: CreateShallowObjectLiteral
+     15    0.1%    0.1%  JS: *wrappedFn node:internal/errors:535:21
+     15    0.1%    0.1%  JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+     15    0.1%    0.1%  JS: *parseRowDescriptionMessage /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:176:31
+     15    0.1%    0.1%  JS: *<anonymous> :22:30
+     15    0.1%    0.1%  Builtin: ToString
+     15    0.1%    0.1%  Builtin: RegExpPrototypeExecSlow
+     15    0.1%    0.1%  Builtin: NumberToString
+     14    0.1%    0.1%  JS: +_handleParseComplete /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:399:23
+     14    0.1%    0.1%  JS: *get node:internal/bootstrap/node:100:8
+     14    0.1%    0.1%  JS: *extname node:path:1388:10
+     13    0.1%    0.1%  JS: *get node:_http_incoming:112:16
+     13    0.1%    0.1%  JS: *Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+     13    0.1%    0.1%  Builtin: MapConstructor
+     13    0.1%    0.1%  Builtin: FastNewClosure
+     12    0.1%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+     12    0.1%    0.1%  JS: +etag /Users/mac/Desktop/Node/LabNode/node_modules/etag/index.js:70:15
+     12    0.1%    0.1%  JS: *insert node:internal/timers:366:16
+     12    0.1%    0.1%  JS: *_pulseQueue /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:119:14
+     12    0.1%    0.1%  JS: *_pulseQueryQueue /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:498:19
+     12    0.1%    0.1%  JS: *__append :8:20
+     12    0.1%    0.1%  Builtin: JSConstructStubGeneric
+     12    0.1%    0.1%  Builtin: BaselineLeaveFrame
+     11    0.0%    0.0%  JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     11    0.0%    0.0%  JS: *removeListener node:events:682:28
+     11    0.0%    0.0%  JS: *readableAddChunkPushByteMode node:internal/streams/readable:461:38
+     11    0.0%    0.0%  JS: *getEncodingOps node:buffer:706:24
+     11    0.0%    0.0%  JS: *_write node:internal/streams/writable:451:16
+     11    0.0%    0.0%  JS: *_send node:_http_outgoing:402:49
+     10    0.0%    0.0%  RegExp: _%>[ \t]* {1}
+     10    0.0%    0.0%  RegExp: [&<>'"]
+     10    0.0%    0.0%  JS: +writevGeneric node:internal/stream_base_commons:123:23
+     10    0.0%    0.0%  JS: +View /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:52:14
+     10    0.0%    0.0%  JS: *readFileSync node:fs:435:22
+     10    0.0%    0.0%  JS: *_destroy node:_http_incoming:221:55
+     10    0.0%    0.0%  JS: *SendStream /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:96:21
+     10    0.0%    0.0%  Builtin: ForInFilter
+     10    0.0%    0.0%  Builtin: ArrayPrototypeSlice
+     10    0.0%    0.0%  Builtin: ArrayPrototypeShift
+     10    0.0%    0.0%  Builtin: AdaptorWithBuiltinExitFrame
+      9    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      9    0.0%    0.0%  JS: +<anonymous> :1:20
+      9    0.0%    0.0%  JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      9    0.0%    0.0%  JS: *onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      9    0.0%    0.0%  JS: *matchKnownFields node:_http_incoming:279:26
+      9    0.0%    0.0%  JS: *FastBuffer node:internal/buffer:960:14
+      9    0.0%    0.0%  Builtin: StringPrototypeSlice
+      9    0.0%    0.0%  Builtin: StrictEqual_Baseline
+      9    0.0%    0.0%  Builtin: RecordWriteIgnoreFP
+      9    0.0%    0.0%  Builtin: Call_ReceiverIsNullOrUndefined_Baseline_Compact
+      9    0.0%    0.0%  Builtin: CallWithArrayLike
+      9    0.0%    0.0%  Builtin: CallVarargs
+      8    0.0%    0.0%  JS: +writeGeneric node:internal/stream_base_commons:148:22
+      8    0.0%    0.0%  JS: +readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      8    0.0%    0.0%  JS: +end node:_http_outgoing:1084:45
+      8    0.0%    0.0%  JS: +debug /Users/mac/Desktop/Node/LabNode/node_modules/express/node_modules/debug/src/debug.js:65:17
+      8    0.0%    0.0%  JS: *slice node:buffer:621:12
+      8    0.0%    0.0%  JS: *readUInt32BE node:internal/buffer:306:22
+      8    0.0%    0.0%  JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      8    0.0%    0.0%  JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      8    0.0%    0.0%  JS: *endReadableNT node:internal/streams/readable:1690:23
+      8    0.0%    0.0%  JS: *_addListener node:events:548:22
+      8    0.0%    0.0%  JS: *Readable.removeListener node:internal/streams/readable:1157:45
+      8    0.0%    0.0%  JS: *Readable.read node:internal/streams/readable:645:35
+      7    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      7    0.0%    0.0%  JS: +pipe /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:505:43
+      7    0.0%    0.0%  JS: +onwrite node:internal/streams/writable:613:17
+      7    0.0%    0.0%  JS: +get node:net:691:16
+      7    0.0%    0.0%  JS: +__append :8:20
+      7    0.0%    0.0%  JS: *processHeader node:_http_outgoing:594:23
+      7    0.0%    0.0%  JS: *parserOnIncoming node:_http_server:1036:26
+      7    0.0%    0.0%  JS: *onParserExecute node:_http_server:842:25
+      7    0.0%    0.0%  JS: *end node:_http_outgoing:1084:45
+      7    0.0%    0.0%  JS: *_release /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:348:11
+      7    0.0%    0.0%  JS: *_handleReadyForQuery /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:302:23
+      7    0.0%    0.0%  JS: *Timeout node:internal/timers:170:14
+      7    0.0%    0.0%  JS: *<anonymous> node:internal/validators:175:40
+      7    0.0%    0.0%  Builtin: StringSlowFlatten
+      7    0.0%    0.0%  Builtin: NumberPrototypeToString
+      7    0.0%    0.0%  Builtin: JSEntry
+      7    0.0%    0.0%  Builtin: FulfillPromise
+      7    0.0%    0.0%  Builtin: ArrayMap
+      6    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      6    0.0%    0.0%  JS: ^parse /Users/mac/Desktop/Node/LabNode/node_modules/content-type/index.js:106:16
+      6    0.0%    0.0%  JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      6    0.0%    0.0%  JS: +parserOnIncoming node:_http_server:1036:26
+      6    0.0%    0.0%  JS: +nop node:internal/streams/writable:93:13
+      6    0.0%    0.0%  JS: +handleWriteReq node:internal/stream_base_commons:46:24
+      6    0.0%    0.0%  JS: +debug /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/node_modules/debug/src/debug.js:65:17
+      6    0.0%    0.0%  JS: +_unrefTimer node:net:507:52
+      6    0.0%    0.0%  JS: +<anonymous> :22:30
+      6    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:195:26
+      6    0.0%    0.0%  JS: *updateOutgoingData node:_http_server:763:28
+      6    0.0%    0.0%  JS: *resOnFinish node:_http_server:978:21
+      6    0.0%    0.0%  JS: *readSync node:fs:698:18
+      6    0.0%    0.0%  JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:520:8
+      6    0.0%    0.0%  JS: *get node:internal/streams/readable:130:8
+      6    0.0%    0.0%  JS: *basename node:path:1309:11
+      6    0.0%    0.0%  JS: *View /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:52:14
+      6    0.0%    0.0%  JS: *Readable.resume node:internal/streams/readable:1225:37
+      6    0.0%    0.0%  JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/index.js:11:23
+      6    0.0%    0.0%  Builtin: Typeof
+      6    0.0%    0.0%  Builtin: StringPrototypeTrim
+      6    0.0%    0.0%  Builtin: StrictEqual
+      6    0.0%    0.0%  Builtin: StoreICTrampoline_Megamorphic
+      6    0.0%    0.0%  Builtin: CloneObjectIC
+      5    0.0%    0.0%  RegExp: ^.*[\.\/\\]
+      5    0.0%    0.0%  RegExp: [|\\{}()[\]^$+*?.]
+      5    0.0%    0.0%  JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:756:17
+      5    0.0%    0.0%  JS: ^<anonymous> :1:20
+      5    0.0%    0.0%  JS: +statSync node:fs:1648:18
+      5    0.0%    0.0%  JS: +res.format /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:684:22
+      5    0.0%    0.0%  JS: +prepare /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:209:10
+      5    0.0%    0.0%  JS: +parserOnHeadersComplete node:_http_common:72:33
+      5    0.0%    0.0%  JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      5    0.0%    0.0%  JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      5    0.0%    0.0%  JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      5    0.0%    0.0%  JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      5    0.0%    0.0%  JS: +Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+      5    0.0%    0.0%  JS: +Socket._writeGeneric node:net:923:42
+      5    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/business/games-business-layer.js:16:58
+      5    0.0%    0.0%  JS: *writeHead node:_http_server:342:19
+      5    0.0%    0.0%  JS: *unenroll node:timers:76:18
+      5    0.0%    0.0%  JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      5    0.0%    0.0%  JS: *restoreUser /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-middleware.js:60:21
+      5    0.0%    0.0%  JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      5    0.0%    0.0%  JS: *onStreamRead node:internal/stream_base_commons:168:22
+      5    0.0%    0.0%  JS: *onFinish node:_http_outgoing:1079:18
+      5    0.0%    0.0%  JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      5    0.0%    0.0%  JS: *get node:internal/streams/duplex:162:8
+      5    0.0%    0.0%  JS: *get node:_http_outgoing:251:16
+      5    0.0%    0.0%  JS: *addCString /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/buffer-writer.js:37:15
+      5    0.0%    0.0%  JS: *Readable node:internal/streams/readable:318:18
+      5    0.0%    0.0%  JS: *<anonymous> node:internal/validators:160:40
+      5    0.0%    0.0%  Builtin: TypedArrayPrototypeLength
+      5    0.0%    0.0%  Builtin: RunMicrotasks
+      5    0.0%    0.0%  Builtin: ResolvePromise
+      5    0.0%    0.0%  Builtin: PromiseConstructor
+      5    0.0%    0.0%  Builtin: LoadIC_NoFeedback
+      5    0.0%    0.0%  Builtin: JSEntryTrampoline
+      5    0.0%    0.0%  Builtin: CreateRegExpLiteral
+      5    0.0%    0.0%  Builtin: Construct
+      5    0.0%    0.0%  Builtin: CEntry_Return1_ArgvOnStack_BuiltinExit
+      5    0.0%    0.0%  Builtin: ArrayPrototypeSort
+      4    0.0%    0.0%  RegExp: ^\/games\/?(?=\/|$)
+      4    0.0%    0.0%  RegExp: ^[a-zA-Z_$][0-9a-zA-Z_$]*$
+      4    0.0%    0.0%  RegExp: ^[A-Za-z]+:\\|^\/
+      4    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      4    0.0%    0.0%  RegExp: ;(\s*$)
+      4    0.0%    0.0%  JS: ^onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+      4    0.0%    0.0%  JS: +write_ node:_http_outgoing:942:16
+      4    0.0%    0.0%  JS: +stat node:fs:1569:14
+      4    0.0%    0.0%  JS: +setStreamTimeout node:internal/stream_base_commons:238:26
+      4    0.0%    0.0%  JS: +serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      4    0.0%    0.0%  JS: +removeAllListeners node:events:746:32
+      4    0.0%    0.0%  JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:520:8
+      4    0.0%    0.0%  JS: +parserOnMessageComplete node:_http_common:137:33
+      4    0.0%    0.0%  JS: +parse /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:24:10
+      4    0.0%    0.0%  JS: +insert node:internal/timers:366:16
+      4    0.0%    0.0%  JS: +howMuchToRead node:internal/streams/readable:628:23
+      4    0.0%    0.0%  JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      4    0.0%    0.0%  JS: +getTimerDuration node:internal/timers:400:26
+      4    0.0%    0.0%  JS: +getStatsFromBinding node:internal/fs/utils:556:29
+      4    0.0%    0.0%  JS: +fromStringFast node:buffer:441:24
+      4    0.0%    0.0%  JS: +format /Users/mac/Desktop/Node/LabNode/node_modules/content-type/index.js:65:17
+      4    0.0%    0.0%  JS: +entitytag /Users/mac/Desktop/Node/LabNode/node_modules/etag/index.js:39:20
+      4    0.0%    0.0%  JS: +endReadableNT node:internal/streams/readable:1690:23
+      4    0.0%    0.0%  JS: +emitCloseNT node:internal/streams/destroy:133:21
+      4    0.0%    0.0%  JS: +emit node:events:467:44
+      4    0.0%    0.0%  JS: +destroy node:internal/streams/destroy:49:17
+      4    0.0%    0.0%  JS: +clearBuffer node:internal/streams/writable:742:21
+      4    0.0%    0.0%  JS: +_pulseQueue /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:119:14
+      4    0.0%    0.0%  JS: +_copy node:buffer:202:15
+      4    0.0%    0.0%  JS: +Timeout node:internal/timers:170:14
+      4    0.0%    0.0%  JS: +Hash node:internal/crypto/hash:66:14
+      4    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:16:58
+      4    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      4    0.0%    0.0%  JS: *slowCases node:internal/util:206:19
+      4    0.0%    0.0%  JS: *set node:internal/streams/writable:260:8
+      4    0.0%    0.0%  JS: *resume_ node:internal/streams/readable:1252:17
+      4    0.0%    0.0%  JS: *parserOnMessageComplete node:_http_common:137:33
+      4    0.0%    0.0%  JS: *normalizeString node:path:66:25
+      4    0.0%    0.0%  JS: *listenerCount node:events:854:23
+      4    0.0%    0.0%  JS: *getStatsFromBinding node:internal/fs/utils:556:29
+      4    0.0%    0.0%  JS: *getIncludePath /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:156:24
+      4    0.0%    0.0%  JS: *endReadable node:internal/streams/readable:1680:21
+      4    0.0%    0.0%  JS: *dispatch /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:101:45
+      4    0.0%    0.0%  JS: *checkError node:internal/streams/destroy:33:20
+      4    0.0%    0.0%  JS: *app.<computed> /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:490:25
+      4    0.0%    0.0%  JS: *allocate node:buffer:426:18
+      4    0.0%    0.0%  JS: *afterWriteTick node:internal/streams/writable:691:24
+      4    0.0%    0.0%  Builtin: WeakSetPrototypeHas
+      4    0.0%    0.0%  Builtin: StringConstructor
+      4    0.0%    0.0%  Builtin: StrictEqual_WithFeedback
+      4    0.0%    0.0%  Builtin: RegExpConstructor
+      4    0.0%    0.0%  Builtin: KeyedLoadICBaseline
+      4    0.0%    0.0%  Builtin: GrowFastSmiOrObjectElements
+      4    0.0%    0.0%  Builtin: FunctionPrototypeHasInstance
+      4    0.0%    0.0%  Builtin: ForInEnumerate
+      4    0.0%    0.0%  Builtin: FastNewObject
+      4    0.0%    0.0%  Builtin: CreateIterResultObject
+      4    0.0%    0.0%  Builtin: ArrayShift
+      4    0.0%    0.0%  Builtin: ArrayFilter
+      3    0.0%    0.0%  RegExp: ^text\/|^application\/(javascript|json)
+      3    0.0%    0.0%  RegExp: ^\/?$
+      3    0.0%    0.0%  RegExp: ^([A-Za-z]+)(?: (\d+))?(?: (\d+))?
+      3    0.0%    0.0%  JS: ^onStreamRead node:internal/stream_base_commons:168:22
+      3    0.0%    0.0%  JS: ^fulfilled /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:5:27
+      3    0.0%    0.0%  JS: ^error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      3    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:195:26
+      3    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:4:46
+      3    0.0%    0.0%  JS: +writeValues /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/serializer.js:63:30
+      3    0.0%    0.0%  JS: +writeInt32BE node:internal/buffer:891:22
+      3    0.0%    0.0%  JS: +writeHead node:_http_server:342:19
+      3    0.0%    0.0%  JS: +tryStat /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:174:17
+      3    0.0%    0.0%  JS: +slowCases node:internal/util:206:19
+      3    0.0%    0.0%  JS: +resolve node:path:1095:10
+      3    0.0%    0.0%  JS: +req.accepts /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/request.js:132:23
+      3    0.0%    0.0%  JS: +readSync node:fs:698:18
+      3    0.0%    0.0%  JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/connection.js:151:8
+      3    0.0%    0.0%  JS: +parse /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/serializer.js:39:15
+      3    0.0%    0.0%  JS: +normalizeParseOptions /Users/mac/Desktop/Node/LabNode/node_modules/qs/lib/parse.js:243:59
+      3    0.0%    0.0%  JS: +listenerCount node:events:854:23
+      3    0.0%    0.0%  JS: +header /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:777:29
+      3    0.0%    0.0%  JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:165:29
+      3    0.0%    0.0%  JS: +getReviewsByGameId /Users/mac/Desktop/Node/LabNode/dist/repositories/reviews-db-repository.js:15:23
+      3    0.0%    0.0%  JS: +get node:internal/streams/writable:1008:8
+      3    0.0%    0.0%  JS: +fromString node:buffer:460:20
+      3    0.0%    0.0%  JS: +flush /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/buffer-writer.js:72:10
+      3    0.0%    0.0%  JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:267:45
+      3    0.0%    0.0%  JS: +emitCloseNT node:_http_server:1025:21
+      3    0.0%    0.0%  JS: +checkError node:internal/streams/destroy:33:20
+      3    0.0%    0.0%  JS: +authSessionMiddleware /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-session.js:58:31
+      3    0.0%    0.0%  JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      3    0.0%    0.0%  JS: +allocate node:buffer:426:18
+      3    0.0%    0.0%  JS: +addChunk node:internal/streams/readable:548:18
+      3    0.0%    0.0%  JS: +_storeHeader node:_http_outgoing:458:22
+      3    0.0%    0.0%  JS: +_pulseQueryQueue /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:498:19
+      3    0.0%    0.0%  JS: +_handleRowDescription /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:369:24
+      3    0.0%    0.0%  JS: +_flush node:_http_outgoing:1192:51
+      3    0.0%    0.0%  JS: +_checkForMultirow /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:60:20
+      3    0.0%    0.0%  JS: +Readable.removeAllListeners node:internal/streams/readable:1179:49
+      3    0.0%    0.0%  JS: +OutgoingMessage node:_http_outgoing:109:25
+      3    0.0%    0.0%  JS: +IncomingMessage node:_http_incoming:53:25
+      3    0.0%    0.0%  JS: +Accepts /Users/mac/Desktop/Node/LabNode/node_modules/accepts/index.js:32:18
+      3    0.0%    0.0%  JS: +<anonymous> node:_http_outgoing:677:45
+      3    0.0%    0.0%  JS: +<anonymous> :1:1
+      3    0.0%    0.0%  JS: *setHeader node:_http_outgoing:701:57
+      3    0.0%    0.0%  JS: *set /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:359:23
+      3    0.0%    0.0%  JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      3    0.0%    0.0%  JS: *readInt32BE node:internal/buffer:479:21
+      3    0.0%    0.0%  JS: *readInt16BE node:internal/buffer:503:21
+      3    0.0%    0.0%  JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/query.js:39:24
+      3    0.0%    0.0%  JS: *normalizeParseOptions /Users/mac/Desktop/Node/LabNode/node_modules/qs/lib/parse.js:243:59
+      3    0.0%    0.0%  JS: *join node:path:1169:7
+      3    0.0%    0.0%  JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      3    0.0%    0.0%  JS: *format /Users/mac/Desktop/Node/LabNode/node_modules/content-type/index.js:65:17
+      3    0.0%    0.0%  JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      3    0.0%    0.0%  JS: *etag /Users/mac/Desktop/Node/LabNode/node_modules/etag/index.js:70:15
+      3    0.0%    0.0%  JS: *createPool node:buffer:152:20
+      3    0.0%    0.0%  JS: *app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      3    0.0%    0.0%  JS: *_handleCommandComplete /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:389:25
+      3    0.0%    0.0%  JS: *Readable.removeAllListeners node:internal/streams/readable:1179:49
+      3    0.0%    0.0%  JS: *Hash node:internal/crypto/hash:66:14
+      3    0.0%    0.0%  JS: *<anonymous> node:internal/fs/utils:734:42
+      3    0.0%    0.0%  Builtin: WeakMapLookupHashIndex
+      3    0.0%    0.0%  Builtin: TypedArrayPrototypeToStringTag
+      3    0.0%    0.0%  Builtin: ToInteger
+      3    0.0%    0.0%  Builtin: StringPrototypeSubstr
+      3    0.0%    0.0%  Builtin: StringPrototypeCharCodeAt
+      3    0.0%    0.0%  Builtin: StoreInArrayLiteralIC
+      3    0.0%    0.0%  Builtin: StoreICTrampoline
+      3    0.0%    0.0%  Builtin: ResumeGeneratorTrampoline
+      3    0.0%    0.0%  Builtin: PromisePrototypeThen
+      3    0.0%    0.0%  Builtin: PromiseFulfillReactionJob
+      3    0.0%    0.0%  Builtin: PromiseCapabilityDefaultResolve
+      3    0.0%    0.0%  Builtin: ObjectGetPrototypeOf
+      3    0.0%    0.0%  Builtin: MathMin
+      3    0.0%    0.0%  Builtin: MapIteratorPrototypeNext
+      3    0.0%    0.0%  Builtin: JsonStringify
+      3    0.0%    0.0%  Builtin: IsTraceCategoryEnabled
+      3    0.0%    0.0%  Builtin: GeneratorPrototypeNext
+      3    0.0%    0.0%  Builtin: CreateEmptyArrayLiteral
+      3    0.0%    0.0%  Builtin: Construct_WithFeedback
+      3    0.0%    0.0%  Builtin: ConstructFunction
+      3    0.0%    0.0%  Builtin: Call_ReceiverIsNotNullOrUndefined_Baseline_Compact
+      3    0.0%    0.0%  Builtin: Call_ReceiverIsAny_Baseline_Compact
+      3    0.0%    0.0%  Builtin: CallForwardVarargs
+      3    0.0%    0.0%  Builtin: CallApiGetter
+      3    0.0%    0.0%  Builtin: ArrayTimSort
+      3    0.0%    0.0%  Builtin: ArrayIsArray
+      2    0.0%    0.0%  RegExp: ^\uFEFF
+      2    0.0%    0.0%  RegExp: ^\/new\/?$
+      2    0.0%    0.0%  RegExp: ^\/auth\/?(?=\/|$)
+      2    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      2    0.0%    0.0%  RegExp: ;(\s*$) {1}
+      2    0.0%    0.0%  RegExp: (^|[^\uD800-\uDBFF])[\uDC00-\uDFFF]|[\uD800-\uDBFF]([^\uDC00-\uDFFF]|$)
+      2    0.0%    0.0%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      2    0.0%    0.0%  JS: ^handleWriteReq node:internal/stream_base_commons:46:24
+      2    0.0%    0.0%  JS: ^compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2    0.0%    0.0%  JS: ^afterWriteDispatched node:internal/stream_base_commons:156:30
+      2    0.0%    0.0%  JS: ^addChunk node:internal/streams/readable:548:18
+      2    0.0%    0.0%  JS: ^<anonymous> :22:30
+      2    0.0%    0.0%  JS: +urlencodedParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      2    0.0%    0.0%  JS: +updateOutgoingData node:_http_server:763:28
+      2    0.0%    0.0%  JS: +unenroll node:timers:76:18
+      2    0.0%    0.0%  JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2    0.0%    0.0%  JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2    0.0%    0.0%  JS: +step /Users/mac/Desktop/Node/LabNode/dist/business/games-business-layer.js:7:22
+      2    0.0%    0.0%  JS: +socketListenerWrap node:_http_server:1199:37
+      2    0.0%    0.0%  JS: +setTimeout node:timers:138:20
+      2    0.0%    0.0%  JS: +set node:internal/streams/writable:260:8
+      2    0.0%    0.0%  JS: +set /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:359:23
+      2    0.0%    0.0%  JS: +sendFile /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:711:51
+      2    0.0%    0.0%  JS: +router /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:46:18
+      2    0.0%    0.0%  JS: +refresh node:internal/timers:213:10
+      2    0.0%    0.0%  JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      2    0.0%    0.0%  JS: +readFileSync node:fs:435:22
+      2    0.0%    0.0%  JS: +processPromiseRejections node:internal/process/promises:436:34
+      2    0.0%    0.0%  JS: +parseRowDescriptionMessage /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:176:31
+      2    0.0%    0.0%  JS: +onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      2    0.0%    0.0%  JS: +mergeBuffer /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:55:16
+      2    0.0%    0.0%  JS: +jsonParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/json.js:101:30
+      2    0.0%    0.0%  JS: +handlePacket /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:89:17
+      2    0.0%    0.0%  JS: +getGameReviews /Users/mac/Desktop/Node/LabNode/dist/business/reviews-business-layer.js:15:19
+      2    0.0%    0.0%  JS: +getGameById /Users/mac/Desktop/Node/LabNode/dist/business/games-business-layer.js:20:16
+      2    0.0%    0.0%  JS: +get node:internal/streams/writable:129:8
+      2    0.0%    0.0%  JS: +get node:internal/streams/writable:1083:8
+      2    0.0%    0.0%  JS: +get node:internal/streams/readable:1540:8
+      2    0.0%    0.0%  JS: +get node:_http_outgoing:199:6
+      2    0.0%    0.0%  JS: +get hasSubscribers node:diagnostics_channel:201:21
+      2    0.0%    0.0%  JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      2    0.0%    0.0%  JS: +emitReadable node:internal/streams/readable:817:22
+      2    0.0%    0.0%  JS: +doWrite node:internal/streams/writable:585:17
+      2    0.0%    0.0%  JS: +createUnsafeBuffer node:internal/buffer:1070:28
+      2    0.0%    0.0%  JS: +createError /Users/mac/Desktop/Node/LabNode/node_modules/http-errors/index.js:49:22
+      2    0.0%    0.0%  JS: +closeSync node:fs:518:19
+      2    0.0%    0.0%  JS: +callback node:internal/streams/writable:762:63
+      2    0.0%    0.0%  JS: +bind /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/serializer.js:87:14
+      2    0.0%    0.0%  JS: +app.<computed> /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:490:25
+      2    0.0%    0.0%  JS: +addCString /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/buffer-writer.js:37:15
+      2    0.0%    0.0%  JS: +_writeRaw node:_http_outgoing:428:19
+      2    0.0%    0.0%  JS: +_handleReadyForQuery /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:302:23
+      2    0.0%    0.0%  JS: +_getMaxListeners node:events:421:26
+      2    0.0%    0.0%  JS: +_flushOutput node:_http_outgoing:1209:63
+      2    0.0%    0.0%  JS: +_acquireClient /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:299:17
+      2    0.0%    0.0%  JS: +Writable.cork node:internal/streams/writable:511:35
+      2    0.0%    0.0%  JS: +StatsBase node:internal/fs/utils:386:19
+      2    0.0%    0.0%  JS: +ServerResponse node:_http_server:195:24
+      2    0.0%    0.0%  JS: +SendStream /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:96:21
+      2    0.0%    0.0%  JS: +Readable.resume node:internal/streams/readable:1225:37
+      2    0.0%    0.0%  JS: +Readable.removeListener node:internal/streams/readable:1157:45
+      2    0.0%    0.0%  JS: +Readable.push node:internal/streams/readable:385:35
+      2    0.0%    0.0%  JS: +Query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:9:14
+      2    0.0%    0.0%  JS: +OutgoingMessage.uncork node:_http_outgoing:326:44
+      2    0.0%    0.0%  JS: +<anonymous> node:internal/validators:458:42
+      2    0.0%    0.0%  JS: +<anonymous> node:internal/fs/utils:740:40
+      2    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/request.js:467:36
+      2    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:51:90
+      2    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      2    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:29
+      2    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:35:58
+      2    0.0%    0.0%  JS: *write_ node:_http_outgoing:942:16
+      2    0.0%    0.0%  JS: *writeValues /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/serializer.js:63:30
+      2    0.0%    0.0%  JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:393:8
+      2    0.0%    0.0%  JS: *prepare /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:209:10
+      2    0.0%    0.0%  JS: *parseDataRowMessage /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:204:24
+      2    0.0%    0.0%  JS: *mergeBuffer /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:55:16
+      2    0.0%    0.0%  JS: *get node:internal/streams/writable:1008:8
+      2    0.0%    0.0%  JS: *get node:internal/streams/readable:1540:8
+      2    0.0%    0.0%  JS: *get node:internal/bootstrap/node:417:8
+      2    0.0%    0.0%  JS: *get node:_http_outgoing:199:6
+      2    0.0%    0.0%  JS: *fulfilled /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:5:27
+      2    0.0%    0.0%  JS: *flush /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/buffer-writer.js:72:10
+      2    0.0%    0.0%  JS: *exports.shallowCopy /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/utils.js:133:32
+      2    0.0%    0.0%  JS: *exports.escapeXML /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/utils.js:96:30
+      2    0.0%    0.0%  JS: *error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      2    0.0%    0.0%  JS: *emitReadable_ node:internal/streams/readable:828:23
+      2    0.0%    0.0%  JS: *emitReadable node:internal/streams/readable:817:22
+      2    0.0%    0.0%  JS: *emitCloseNT node:internal/streams/destroy:133:21
+      2    0.0%    0.0%  JS: *emitCloseNT node:_http_server:1025:21
+      2    0.0%    0.0%  JS: *authSessionMiddleware /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-session.js:58:31
+      2    0.0%    0.0%  JS: *addFields /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/result.js:82:12
+      2    0.0%    0.0%  JS: *_handleDataRow /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:374:17
+      2    0.0%    0.0%  JS: *_copy node:buffer:202:15
+      2    0.0%    0.0%  JS: *Writable.uncork node:internal/streams/writable:518:37
+      2    0.0%    0.0%  JS: *Readable.on node:internal/streams/readable:1125:33
+      2    0.0%    0.0%  JS: *IncomingMessage node:_http_incoming:53:25
+      2    0.0%    0.0%  JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      2    0.0%    0.0%  Builtin: ToObject
+      2    0.0%    0.0%  Builtin: ToName
+      2    0.0%    0.0%  Builtin: ToBoolean
+      2    0.0%    0.0%  Builtin: SubtractSmi_Baseline
+      2    0.0%    0.0%  Builtin: StringPrototypeToLowerCaseIntl
+      2    0.0%    0.0%  Builtin: StringPrototypeIndexOf
+      2    0.0%    0.0%  Builtin: StringAddConvertRight
+      2    0.0%    0.0%  Builtin: StoreFastElementIC_InBounds
+      2    0.0%    0.0%  Builtin: ObjectKeys
+      2    0.0%    0.0%  Builtin: ObjectIs
+      2    0.0%    0.0%  Builtin: NewRestArgumentsElements
+      2    0.0%    0.0%  Builtin: LoadIC_StringLength
+      2    0.0%    0.0%  Builtin: LoadICBaseline
+      2    0.0%    0.0%  Builtin: LoadGlobalICTrampoline
+      2    0.0%    0.0%  Builtin: KeyedStoreICTrampoline_Megamorphic
+      2    0.0%    0.0%  Builtin: KeyedLoadICTrampoline
+      2    0.0%    0.0%  Builtin: KeyedHasIC_PolymorphicName
+      2    0.0%    0.0%  Builtin: Increment_Baseline
+      2    0.0%    0.0%  Builtin: GreaterThan_Baseline
+      2    0.0%    0.0%  Builtin: GreaterThanOrEqual_Baseline
+      2    0.0%    0.0%  Builtin: GlobalIsNaN
+      2    0.0%    0.0%  Builtin: FunctionConstructor
+      2    0.0%    0.0%  Builtin: FastFunctionPrototypeBind
+      2    0.0%    0.0%  Builtin: EnqueueMicrotask
+      2    0.0%    0.0%  Builtin: CreateObjectWithoutProperties
+      2    0.0%    0.0%  Builtin: Construct_Baseline
+      2    0.0%    0.0%  Builtin: CanUseSameAccessor_FastObjectElements_0
+      2    0.0%    0.0%  Builtin: CallFunctionTemplate_Generic
+      2    0.0%    0.0%  Builtin: ArraySingleArgumentConstructor_Holey_DisableAllocationSites
+      2    0.0%    0.0%  Builtin: ArrayBufferIsView
+      2    0.0%    0.0%  Builtin: Add_WithFeedback
+      1    0.0%    0.0%  RegExp: ^\uFEFF {1}
+      1    0.0%    0.0%  RegExp: (?:[^\x21\x23-\x3B\x3D\x3F-\x5F\x61-\x7A\x7C\x7E]|%(?:[^0-9A-Fa-f]|[0-9A-Fa-f][^0-9A-Fa-f]|$))+
+      1    0.0%    0.0%  JS: ~verifyAuthToken /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-middleware.js:22:25
+      1    0.0%    0.0%  JS: ~setOwnProperty node:internal/util:741:24
+      1    0.0%    0.0%  JS: ~module.exports /Users/mac/Desktop/Node/LabNode/node_modules/qs/lib/parse.js:304:27
+      1    0.0%    0.0%  JS: ~Module._nodeModulePaths node:internal/modules/cjs/loader:843:37
+      1    0.0%    0.0%  JS: ~<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/serializer.js:1:1
+      1    0.0%    0.0%  JS: ~<anonymous> /Users/mac/Desktop/Node/LabNode/dist/business/reviews-business-layer.js:16:58
+      1    0.0%    0.0%  JS: ^writeOrBuffer node:internal/streams/writable:546:23
+      1    0.0%    0.0%  JS: ^writeGeneric node:internal/stream_base_commons:148:22
+      1    0.0%    0.0%  JS: ^update node:internal/crypto/hash:107:40
+      1    0.0%    0.0%  JS: ^trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1    0.0%    0.0%  JS: ^step /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:7:22
+      1    0.0%    0.0%  JS: ^step /Users/mac/Desktop/Node/LabNode/dist/repositories/reviews-db-repository.js:7:22
+      1    0.0%    0.0%  JS: ^render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1    0.0%    0.0%  JS: ^removeAllListeners node:events:746:32
+      1    0.0%    0.0%  JS: ^ref /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:609:6
+      1    0.0%    0.0%  JS: ^prepare /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:209:10
+      1    0.0%    0.0%  JS: ^parseFileMode node:internal/validators:69:23
+      1    0.0%    0.0%  JS: ^once node:events:653:44
+      1    0.0%    0.0%  JS: ^onEofChunk node:internal/streams/readable:786:20
+      1    0.0%    0.0%  JS: ^normalizeParseOptions /Users/mac/Desktop/Node/LabNode/node_modules/qs/lib/parse.js:243:59
+      1    0.0%    0.0%  JS: ^normalizeEncoding node:internal/util:201:27
+      1    0.0%    0.0%  JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      1    0.0%    0.0%  JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:121:16
+      1    0.0%    0.0%  JS: ^insert node:internal/timers:366:16
+      1    0.0%    0.0%  JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1    0.0%    0.0%  JS: ^getReviewsByGameId /Users/mac/Desktop/Node/LabNode/dist/repositories/reviews-db-repository.js:15:23
+      1    0.0%    0.0%  JS: ^getPriority /Users/mac/Desktop/Node/LabNode/node_modules/negotiator/lib/mediaType.js:174:53
+      1    0.0%    0.0%  JS: ^getOptions node:internal/fs/utils:324:20
+      1    0.0%    0.0%  JS: ^getGameReviews /Users/mac/Desktop/Node/LabNode/dist/business/reviews-business-layer.js:15:19
+      1    0.0%    0.0%  JS: ^get node:net:691:16
+      1    0.0%    0.0%  JS: ^get node:internal/streams/readable:130:8
+      1    0.0%    0.0%  JS: ^from node:buffer:292:28
+      1    0.0%    0.0%  JS: ^fileLoader /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:292:20
+      1    0.0%    0.0%  JS: ^emitCloseNT node:internal/streams/destroy:133:21
+      1    0.0%    0.0%  JS: ^decode /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:996:17
+      1    0.0%    0.0%  JS: ^debug /Users/mac/Desktop/Node/LabNode/node_modules/send/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  JS: ^createUnsafeBuffer node:internal/buffer:1070:28
+      1    0.0%    0.0%  JS: ^clearBuffer node:internal/streams/writable:742:21
+      1    0.0%    0.0%  JS: ^cb /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:36:23
+      1    0.0%    0.0%  JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1    0.0%    0.0%  JS: ^afterWriteTick node:internal/streams/writable:691:24
+      1    0.0%    0.0%  JS: ^_acquireClient /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:299:17
+      1    0.0%    0.0%  JS: ^Readable node:internal/streams/readable:318:18
+      1    0.0%    0.0%  JS: ^Module._load node:internal/modules/cjs/loader:1010:24
+      1    0.0%    0.0%  JS: ^Module._findPath node:internal/modules/cjs/loader:660:28
+      1    0.0%    0.0%  JS: ^<anonymous> node:internal/validators:93:3
+      1    0.0%    0.0%  JS: ^<anonymous> node:fs:197:10
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:429:36
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:411:18
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:280:64
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/reviews-db-repository.js:4:46
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:4:46
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:22:36
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/business/reviews-business-layer.js:4:46
+      1    0.0%    0.0%  JS: +writeOrBuffer node:internal/streams/writable:546:23
+      1    0.0%    0.0%  JS: +wrappedFn node:internal/errors:535:21
+      1    0.0%    0.0%  JS: +vary /Users/mac/Desktop/Node/LabNode/node_modules/vary/index.js:133:15
+      1    0.0%    0.0%  JS: +tryCreateBuffer node:fs:399:25
+      1    0.0%    0.0%  JS: +toString node:buffer:811:46
+      1    0.0%    0.0%  JS: +submit /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:152:9
+      1    0.0%    0.0%  JS: +stringToFlags node:internal/fs/utils:599:23
+      1    0.0%    0.0%  JS: +step /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:7:22
+      1    0.0%    0.0%  JS: +step /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:7:22
+      1    0.0%    0.0%  JS: +socketOnDrain node:_http_server:768:23
+      1    0.0%    0.0%  JS: +setHeader node:_http_outgoing:701:57
+      1    0.0%    0.0%  JS: +set node:internal/streams/readable:131:8
+      1    0.0%    0.0%  JS: +restore /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:631:17
+      1    0.0%    0.0%  JS: +resetBuffer node:internal/streams/writable:362:21
+      1    0.0%    0.0%  JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1    0.0%    0.0%  JS: +removeListener node:events:682:28
+      1    0.0%    0.0%  JS: +ref /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:609:6
+      1    0.0%    0.0%  JS: +readUInt32BE node:internal/buffer:306:22
+      1    0.0%    0.0%  JS: +readStart node:_http_incoming:42:19
+      1    0.0%    0.0%  JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:393:8
+      1    0.0%    0.0%  JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/query.js:39:24
+      1    0.0%    0.0%  JS: +pushAsyncContext node:internal/async_hooks:539:26
+      1    0.0%    0.0%  JS: +promisify /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:30:19
+      1    0.0%    0.0%  JS: +processTicksAndRejections node:internal/process/task_queues:67:35
+      1    0.0%    0.0%  JS: +processHeader node:_http_outgoing:594:23
+      1    0.0%    0.0%  JS: +popAsyncContext node:internal/async_hooks:553:25
+      1    0.0%    0.0%  JS: +parseurl /Users/mac/Desktop/Node/LabNode/node_modules/parseurl/index.js:35:19
+      1    0.0%    0.0%  JS: +parseField /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:185:15
+      1    0.0%    0.0%  JS: +openSync node:fs:561:18
+      1    0.0%    0.0%  JS: +onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+      1    0.0%    0.0%  JS: +onFinish node:_http_outgoing:1079:18
+      1    0.0%    0.0%  JS: +onEofChunk node:internal/streams/readable:786:20
+      1    0.0%    0.0%  JS: +nop node:_http_outgoing:94:13
+      1    0.0%    0.0%  JS: +nextTick node:internal/process/task_queues:103:18
+      1    0.0%    0.0%  JS: +next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:121:16
+      1    0.0%    0.0%  JS: +module.exports /Users/mac/Desktop/Node/LabNode/node_modules/utils-merge/index.js:16:36
+      1    0.0%    0.0%  JS: +maybeReadMore_ node:internal/streams/readable:862:24
+      1    0.0%    0.0%  JS: +match /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:110:39
+      1    0.0%    0.0%  JS: +isstats /Users/mac/Desktop/Node/LabNode/node_modules/etag/index.js:104:18
+      1    0.0%    0.0%  JS: +isInt32 node:internal/validators:43:17
+      1    0.0%    0.0%  JS: +isFileType node:fs:205:20
+      1    0.0%    0.0%  JS: +isEncoding node:buffer:557:40
+      1    0.0%    0.0%  JS: +insertGuarded node:internal/timers:340:23
+      1    0.0%    0.0%  JS: +handleReadyForQuery /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:136:22
+      1    0.0%    0.0%  JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.0%  JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  JS: +getOptions node:internal/fs/utils:324:20
+      1    0.0%    0.0%  JS: +getIncludePath /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:156:24
+      1    0.0%    0.0%  JS: +getAllGames /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:15:16
+      1    0.0%    0.0%  JS: +getAllGames /Users/mac/Desktop/Node/LabNode/dist/business/games-business-layer.js:15:16
+      1    0.0%    0.0%  JS: +get node:internal/streams/readable:1413:8
+      1    0.0%    0.0%  JS: +get node:internal/streams/duplex:162:8
+      1    0.0%    0.0%  JS: +get node:events:283:16
+      1    0.0%    0.0%  JS: +fastparse /Users/mac/Desktop/Node/LabNode/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  JS: +extToMime /Users/mac/Desktop/Node/LabNode/node_modules/accepts/index.js:222:20
+      1    0.0%    0.0%  JS: +expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      1    0.0%    0.0%  JS: +exports.shallowCopyFromList /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/utils.js:161:40
+      1    0.0%    0.0%  JS: +exports.createNullProtoObjWherePossible.__proto__ /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/utils.js:226:21
+      1    0.0%    0.0%  JS: +endReadable node:internal/streams/readable:1680:21
+      1    0.0%    0.0%  JS: +debug /Users/mac/Desktop/Node/LabNode/node_modules/send/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  JS: +createRegex /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:560:25
+      1    0.0%    0.0%  JS: +createPool node:buffer:152:20
+      1    0.0%    0.0%  JS: +connect /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:182:10
+      1    0.0%    0.0%  JS: +clearIncoming node:_http_server:965:23
+      1    0.0%    0.0%  JS: +checkInt node:internal/buffer:60:18
+      1    0.0%    0.0%  JS: +append /Users/mac/Desktop/Node/LabNode/node_modules/vary/index.js:38:17
+      1    0.0%    0.0%  JS: +afterWriteTick node:internal/streams/writable:691:24
+      1    0.0%    0.0%  JS: +adopt /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:3:19
+      1    0.0%    0.0%  JS: +addListener node:events:611:58
+      1    0.0%    0.0%  JS: +addInt32 /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/buffer-writer.js:23:13
+      1    0.0%    0.0%  JS: +addCommandComplete /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/result.js:28:21
+      1    0.0%    0.0%  JS: +_send /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/connection.js:144:8
+      1    0.0%    0.0%  JS: +_release /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:348:11
+      1    0.0%    0.0%  JS: +_handleCommandComplete /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:389:25
+      1    0.0%    0.0%  JS: +_destroy node:internal/streams/destroy:90:18
+      1    0.0%    0.0%  JS: +_copyActual node:buffer:238:21
+      1    0.0%    0.0%  JS: +_addOutput /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:788:24
+      1    0.0%    0.0%  JS: +_addListener node:events:548:22
+      1    0.0%    0.0%  JS: +__awaiter /Users/mac/Desktop/Node/LabNode/dist/business/games-business-layer.js:2:54
+      1    0.0%    0.0%  JS: +Writable.write node:internal/streams/writable:502:36
+      1    0.0%    0.0%  JS: +Writable.uncork node:internal/streams/writable:518:37
+      1    0.0%    0.0%  JS: +Socket._read node:net:707:34
+      1    0.0%    0.0%  JS: +SafeMap node:internal/per_context/primordials:414:16
+      1    0.0%    0.0%  JS: +Readable.read node:internal/streams/readable:645:35
+      1    0.0%    0.0%  JS: +Readable node:internal/streams/readable:318:18
+      1    0.0%    0.0%  JS: +Pool.log /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:94:45
+      1    0.0%    0.0%  JS: +Mime.lookup /Users/mac/Desktop/Node/LabNode/node_modules/mime/mime.js:69:33
+      1    0.0%    0.0%  JS: +FastBuffer node:internal/buffer:960:14
+      1    0.0%    0.0%  JS: +ContentType /Users/mac/Desktop/Node/LabNode/node_modules/content-type/index.js:222:22
+      1    0.0%    0.0%  JS: +Accepts.type.Accepts.types /Users/mac/Desktop/Node/LabNode/node_modules/accepts/index.js:83:36
+      1    0.0%    0.0%  JS: +<anonymous> node:internal/validators:393:40
+      1    0.0%    0.0%  JS: +<anonymous> node:internal/validators:137:40
+      1    0.0%    0.0%  JS: +<anonymous> node:internal/validators:114:3
+      1    0.0%    0.0%  JS: +<anonymous> node:internal/per_context/primordials:339:21
+      1    0.0%    0.0%  JS: +<anonymous> node:internal/fs/utils:712:38
+      1    0.0%    0.0%  JS: +<anonymous> node:_http_outgoing:671:44
+      1    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/connection.js:111:19
+      1    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/index.js:11:23
+      1    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:411:18
+      1    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+      1    0.0%    0.0%  JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:22:36
+      1    0.0%    0.0%  JS: *writeInt32BE node:internal/buffer:891:22
+      1    0.0%    0.0%  JS: *writeGeneric node:internal/stream_base_commons:148:22
+      1    0.0%    0.0%  JS: *validMime /Users/mac/Desktop/Node/LabNode/node_modules/accepts/index.js:236:20
+      1    0.0%    0.0%  JS: *toString node:buffer:811:46
+      1    0.0%    0.0%  JS: *stripSemi /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:364:19
+      1    0.0%    0.0%  JS: *stringToFlags node:internal/fs/utils:599:23
+      1    0.0%    0.0%  JS: *step /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:7:22
+      1    0.0%    0.0%  JS: *stat node:fs:1569:14
+      1    0.0%    0.0%  JS: *set node:_http_outgoing:254:16
+      1    0.0%    0.0%  JS: *router /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:46:18
+      1    0.0%    0.0%  JS: *refresh node:internal/timers:213:10
+      1    0.0%    0.0%  JS: *parserOnHeadersComplete node:_http_common:72:33
+      1    0.0%    0.0%  JS: *parseRow /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/result.js:63:11
+      1    0.0%    0.0%  JS: *parseMediaType /Users/mac/Desktop/Node/LabNode/node_modules/negotiator/lib/mediaType.js:53:24
+      1    0.0%    0.0%  JS: *onParserExecuteCommon node:_http_server:915:31
+      1    0.0%    0.0%  JS: *noop node:internal/util/debuglog:57:14
+      1    0.0%    0.0%  JS: *noParse /Users/mac/Desktop/Node/LabNode/node_modules/pg-types/index.js:17:18
+      1    0.0%    0.0%  JS: *maybeReadMore_ node:internal/streams/readable:862:24
+      1    0.0%    0.0%  JS: *get node:internal/bootstrap/node:379:8
+      1    0.0%    0.0%  JS: *fastparse /Users/mac/Desktop/Node/LabNode/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  JS: *clearIncoming node:_http_server:965:23
+      1    0.0%    0.0%  JS: *addListener node:events:611:58
+      1    0.0%    0.0%  JS: *_handleParseComplete /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:399:23
+      1    0.0%    0.0%  JS: *_addHeaderLines node:_http_incoming:247:25
+      1    0.0%    0.0%  JS: *Writable.write node:internal/streams/writable:502:36
+      1    0.0%    0.0%  JS: *SafeMap node:internal/per_context/primordials:414:16
+      1    0.0%    0.0%  JS: *OutgoingMessage node:_http_outgoing:109:25
+      1    0.0%    0.0%  JS: *EventEmitter node:events:221:22
+      1    0.0%    0.0%  JS: *<anonymous> node:internal/validators:458:42
+      1    0.0%    0.0%  JS: *<anonymous> node:internal/fs/utils:740:40
+      1    0.0%    0.0%  JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/request.js:467:36
+      1    0.0%    0.0%  JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:29
+      1    0.0%    0.0%  JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/business/games-business-layer.js:16:58
+      1    0.0%    0.0%  Builtin: TypedArrayPrototypeSet
+      1    0.0%    0.0%  Builtin: SuspendGeneratorBaseline
+      1    0.0%    0.0%  Builtin: StringPrototypeSubstring
+      1    0.0%    0.0%  Builtin: StoreIC_NoFeedback
+      1    0.0%    0.0%  Builtin: StoreICBaseline
+      1    0.0%    0.0%  Builtin: PromisePrototypeCatch
+      1    0.0%    0.0%  Builtin: OrdinaryHasInstance
+      1    0.0%    0.0%  Builtin: ObjectToString
+      1    0.0%    0.0%  Builtin: ObjectSetPrototypeOf
+      1    0.0%    0.0%  Builtin: ObjectCreate
+      1    0.0%    0.0%  Builtin: NumberIsNaN
+      1    0.0%    0.0%  Builtin: NumberIsInteger
+      1    0.0%    0.0%  Builtin: NumberIsFinite
+      1    0.0%    0.0%  Builtin: NumberConstructor
+      1    0.0%    0.0%  Builtin: NewStrictArgumentsElements
+      1    0.0%    0.0%  Builtin: MapPrototypeEntries
+      1    0.0%    0.0%  Builtin: LoadIC_Noninlined
+      1    0.0%    0.0%  Builtin: LessThan_Baseline
+      1    0.0%    0.0%  Builtin: LessThanOrEqual_WithFeedback
+      1    0.0%    0.0%  Builtin: LessThanOrEqual_Baseline
+      1    0.0%    0.0%  Builtin: InterpreterEntryTrampoline
+      1    0.0%    0.0%  Builtin: InstanceOf
+      1    0.0%    0.0%  Builtin: HandleApiConstruct
+      1    0.0%    0.0%  Builtin: HandleApiCallOrConstruct
+      1    0.0%    0.0%  Builtin: FindNonDefaultConstructorOrConstruct
+      1    0.0%    0.0%  Builtin: DoubleToI
+      1    0.0%    0.0%  Builtin: DefineNamedOwnIC
+      1    0.0%    0.0%  Builtin: CreateShallowArrayLiteral
+      1    0.0%    0.0%  Builtin: CreateGeneratorObject
+      1    0.0%    0.0%  Builtin: CloneFastJSArray
+      1    0.0%    0.0%  Builtin: CallApiCallbackGeneric
+      1    0.0%    0.0%  Builtin: CEntry_Return2_ArgvOnStack_NoBuiltinExit
+      1    0.0%    0.0%  Builtin: BooleanConstructor
+      1    0.0%    0.0%  Builtin: BitwiseOr_Baseline
+      1    0.0%    0.0%  Builtin: BitwiseNot_Baseline
+      1    0.0%    0.0%  Builtin: BitwiseAnd_Baseline
+      1    0.0%    0.0%  Builtin: ArrayUnshift
+      1    0.0%    0.0%  Builtin: ArrayPrototypePop
+      1    0.0%    0.0%  Builtin: ArrayPrototypeJoin
+      1    0.0%    0.0%  Builtin: ArrayPrototypeConcat
+      1    0.0%    0.0%  Builtin: ArrayForEach
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+   6714   29.5%   29.5%  JavaScript
+      0    0.0%    0.0%  C++
+    494    2.2%    2.2%  GC
+      0    0.0%          Shared libraries
+  16075   70.5%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  16075   70.5%  UNKNOWN
+   2284   14.2%    JS: *writevGeneric node:internal/stream_base_commons:123:23
+   2124   93.0%      JS: *clearBuffer node:internal/streams/writable:742:21
+   1219   57.4%        JS: *end node:_http_outgoing:1084:45
+    711   58.3%          JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+    684   96.2%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     27    3.8%            JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+    341   28.0%          JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+    341  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+    167   13.7%          JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+    153   91.6%            JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+     14    8.4%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    627   29.5%        JS: *Writable.uncork node:internal/streams/writable:518:37
+    627  100.0%          JS: *_pulseQueryQueue /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:498:19
+    483   77.0%            JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:520:8
+    144   23.0%            JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:520:8
+    278   13.1%        JS: +end node:_http_outgoing:1084:45
+    179   64.4%          JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+    179  100.0%            JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+     99   35.6%          JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+     99  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+    160    7.0%      JS: +Socket._writeGeneric node:net:923:42
+    160  100.0%        JS: +doWrite node:internal/streams/writable:585:17
+    160  100.0%          JS: +clearBuffer node:internal/streams/writable:742:21
+    111   69.4%            JS: +end node:_http_outgoing:1084:45
+     49   30.6%            JS: *Writable.uncork node:internal/streams/writable:518:37
+    663    4.1%    JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+    277   41.8%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    272   98.2%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+    261   96.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+    185   70.9%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+     72   27.6%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      4    1.5%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+     11    4.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+     11  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      5    1.8%        JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      5  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      5  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+    237   35.7%      JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+    143   60.3%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    143  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+    143  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     78   32.9%        JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     77   98.7%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     42   54.5%            JS: +<anonymous> :1:20
+     35   45.5%            JS: ^<anonymous> :1:20
+      1    1.3%          JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%            JS: ^<anonymous> :1:20
+     16    6.8%        JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+     16  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     16  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+    149   22.5%      JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+    145   97.3%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+    125   86.2%          JS: +<anonymous> :1:20
+    123   98.4%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2    1.6%            JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+     20   13.8%          JS: ^<anonymous> :1:20
+     19   95.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1    5.0%            JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      4    2.7%        JS: *include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      4  100.0%          JS: +<anonymous> :1:20
+      4  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    591    3.7%    JS: *readFileSync node:fs:435:22
+    221   37.4%      JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+    114   51.6%        JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+    113   99.1%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     63   55.8%            JS: ^<anonymous> :1:20
+     50   44.2%            JS: +<anonymous> :1:20
+    100   45.2%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    100  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+    100  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      7    3.2%        JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      7  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      7  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+    196   33.2%      JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+    194   99.0%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+    170   87.6%          JS: +<anonymous> :1:20
+    164   96.5%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6    3.5%            JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+     24   12.4%          JS: ^<anonymous> :1:20
+     24  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2    1.0%        JS: *include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      2  100.0%          JS: +<anonymous> :1:20
+      2  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    172   29.1%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    171   99.4%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+    159   93.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+    106   66.7%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+     51   32.1%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      2    1.3%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+     12    7.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+     12  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+    496    3.1%    JS: +handleWriteReq node:internal/stream_base_commons:46:24
+    496  100.0%      JS: +writeGeneric node:internal/stream_base_commons:148:22
+    496  100.0%        JS: *_write node:internal/streams/writable:451:16
+    436   87.9%          JS: *_pulseQueryQueue /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:498:19
+    289   66.3%            JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:520:8
+    147   33.7%            JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:520:8
+     60   12.1%          JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/connection.js:151:8
+     60  100.0%            JS: +submit /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/query.js:152:9
+    354    2.2%    JS: +writevGeneric node:internal/stream_base_commons:123:23
+    352   99.4%      JS: +Socket._writeGeneric node:net:923:42
+    342   97.2%        JS: +doWrite node:internal/streams/writable:585:17
+    342  100.0%          JS: +clearBuffer node:internal/streams/writable:742:21
+    202   59.1%            JS: +end node:_http_outgoing:1084:45
+    133   38.9%            JS: +Writable.uncork node:internal/streams/writable:518:37
+      7    2.0%            JS: *Writable.uncork node:internal/streams/writable:518:37
+     10    2.8%        JS: ^Socket._writev node:net:960:36
+     10  100.0%          JS: ^doWrite node:internal/streams/writable:585:17
+      6   60.0%            JS: ^clearBuffer node:internal/streams/writable:742:21
+      4   40.0%            JS: +clearBuffer node:internal/streams/writable:742:21
+    320    2.0%    Builtin: StringPrototypeReplace
+    155   48.4%      JS: *scanLine /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:815:22
+    150   96.8%        JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+    116   77.3%          JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     55   47.4%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     38   32.8%            JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     22   19.0%            JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     28   18.7%          JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+     28  100.0%            JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      6    4.0%          Builtin: ArrayForEach
+      6  100.0%            JS: ^generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      5    3.2%        JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+      3   60.0%          JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      3  100.0%            JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2   40.0%          JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2  100.0%            JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     55   17.2%      JS: *Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+     21   38.2%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     20   95.2%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     19   95.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1    5.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1    4.8%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     21   38.2%        JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     13   61.9%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     13  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      7   33.3%          JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      7  100.0%            JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1    4.8%          JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     13   23.6%        JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     13  100.0%          JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     11   84.6%            JS: +<anonymous> :1:20
+      2   15.4%            JS: ^<anonymous> :1:20
+     35   10.9%      JS: *stripSemi /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:364:19
+     35  100.0%        JS: *scanLine /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:815:22
+     35  100.0%          JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+     27   77.1%            JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      8   22.9%            JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+     18    5.6%      JS: +<anonymous> :22:30
+      9   50.0%        JS: +<anonymous> :1:20
+      4   44.4%          JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      4  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3   33.3%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%            JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2   22.2%          JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      2  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      9   50.0%        Builtin: ArrayForEach
+      9  100.0%          JS: ^<anonymous> :1:20
+      7   77.8%            JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      2   22.2%            JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+     15    4.7%      JS: +createRegex /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:560:25
+     15  100.0%        JS: +Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+     15  100.0%          JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      8   53.3%            JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      5   33.3%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2   13.3%            JS: ^includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     12    3.8%      JS: *<anonymous> :22:30
+     10   83.3%        JS: +<anonymous> :1:20
+     10  100.0%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     10  100.0%            JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2   16.7%        Builtin: ArrayForEach
+      2  100.0%          JS: ^<anonymous> :1:20
+      2  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      8    2.5%      JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      8  100.0%        JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      4   50.0%          JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      4  100.0%            JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:121:16
+      4   50.0%          JS: *dispatch /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:101:45
+      4  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      7    2.2%      JS: *exports.escapeXML /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/utils.js:96:30
+      5   71.4%        JS: ^<anonymous> :1:20
+      3   60.0%          JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      3  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   20.0%          JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   20.0%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2   28.6%        JS: ^<anonymous> :22:30
+      2  100.0%          Builtin: ArrayForEach
+      2  100.0%            JS: ^<anonymous> :1:20
+      4    1.3%      JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      3   75.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   25.0%        JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1  100.0%          JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%            JS: ^<anonymous> :1:20
+    317    2.0%    Builtin: StringPrototypeSplit
+    296   93.4%      JS: *scanLine /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:815:22
+    291   98.3%        JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+    226   77.7%          JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+    102   45.1%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     86   38.1%            JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     38   16.8%            JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     63   21.6%          JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+     63  100.0%            JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      4    1.4%        JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+      2   50.0%          JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      2  100.0%            JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2   50.0%          JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2  100.0%            JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      7    2.2%      JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      7  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      7  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      7  100.0%            JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      6    1.9%      JS: +splitMediaTypes /Users/mac/Desktop/Node/LabNode/node_modules/negotiator/lib/mediaType.js:253:25
+      6  100.0%        JS: +preferredMediaTypes /Users/mac/Desktop/Node/LabNode/node_modules/negotiator/lib/mediaType.js:162:29
+      5   83.3%          JS: +Accepts.type.Accepts.types /Users/mac/Desktop/Node/LabNode/node_modules/accepts/index.js:83:36
+      5  100.0%            JS: +req.accepts /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/request.js:132:23
+      1   16.7%          JS: ^mediaTypes /Users/mac/Desktop/Node/LabNode/node_modules/negotiator/index.js:70:54
+      1  100.0%            JS: ^Accepts.type.Accepts.types /Users/mac/Desktop/Node/LabNode/node_modules/accepts/index.js:83:36
+      4    1.3%      JS: *header /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:777:29
+      3   75.0%        JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      3  100.0%          JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      3  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   25.0%        JS: +res.format /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:684:22
+      1  100.0%          JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      1  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+    247    1.5%    JS: +stat node:fs:1569:14
+    129   52.2%      JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+    129  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+    129  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+    127   98.4%            JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      2    1.6%            JS: +expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+    111   44.9%      JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:756:17
+     50   45.0%        JS: +sendIndex /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:752:53
+     50  100.0%          JS: +pipe /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:505:43
+     50  100.0%            JS: +serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+     50   45.0%        JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+     50  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+     50  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+     11    9.9%        JS: ^sendIndex /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:752:53
+     11  100.0%          JS: +pipe /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:505:43
+     11  100.0%            JS: +serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      7    2.8%      JS: ^sendFile /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:711:51
+      7  100.0%        JS: +pipe /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:505:43
+      7  100.0%          JS: +serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      4   57.1%            JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      3   42.9%            JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+    235    1.5%    JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+    235  100.0%      JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+    142   60.4%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    137   96.5%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+    137  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      5    3.5%          JS: ^exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      5  100.0%            JS: ^render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:133:40
+     71   30.2%        JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     58   81.7%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     52   89.7%            JS: ^<anonymous> :1:20
+      6   10.3%            JS: +<anonymous> :1:20
+     13   18.3%          JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     13  100.0%            JS: ^<anonymous> :1:20
+     12    5.1%        JS: ^tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     12  100.0%          JS: ^exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+     12  100.0%            JS: ^render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:133:40
+     10    4.3%        JS: ^includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     10  100.0%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     10  100.0%            JS: ^<anonymous> :1:20
+    232    1.4%    JS: *stat node:fs:1569:14
+    183   78.9%      JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+    183  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+    183  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+    183  100.0%            JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+     49   21.1%      JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:756:17
+     49  100.0%        JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+     49  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+     49  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+    169    1.1%    JS: *end node:_http_outgoing:1084:45
+    101   59.8%      JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+     98   97.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     98  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     93   94.9%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      5    5.1%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3    3.0%        JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      3  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+     50   29.6%      JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+     50  100.0%        JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+     50  100.0%          JS: *dispatch /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:101:45
+     50  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+     18   10.7%      JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+     18  100.0%        JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+     18  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     18  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+    168    1.0%    JS: +sendFile /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:711:51
+    168  100.0%      JS: +pipe /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:505:43
+    168  100.0%        JS: +serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+    166   98.8%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+    166  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      2    1.2%          JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%            JS: +trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+    164    1.0%    JS: +openSync node:fs:561:18
+    164  100.0%      JS: +readFileSync node:fs:435:22
+    164  100.0%        JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     80   48.8%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     76   95.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      4    5.0%            JS: ^exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+     71   43.3%          JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     54   76.1%            JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     17   23.9%            JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      7    4.3%          JS: ^includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      7  100.0%            JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      6    3.7%          JS: ^tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6  100.0%            JS: ^exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+
+    462    2.0%  RegExp: [ \t]*<%_
+    462  100.0%    Builtin: StringPrototypeReplace
+    346   74.9%      JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+    219   63.3%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    214   97.7%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+    203   94.9%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+     11    5.1%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      5    2.3%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      5  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+    127   36.7%        JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+    123   96.9%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+    123  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      4    3.1%          JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      4  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+    105   22.7%      JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+    105  100.0%        JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+    105  100.0%          JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+    100   95.2%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      5    4.8%            JS: ^tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     10    2.2%      JS: ^generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+     10  100.0%        JS: ^compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     10  100.0%          JS: ^compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:381:35
+     10  100.0%            JS: ^handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+
+    374    1.6%  Builtin: LoadIC_Megamorphic
+     33    8.8%    JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+     24    6.4%    JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+     18   75.0%      JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      8   44.4%        JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      6   75.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2   25.0%          JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1   50.0%            JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1   50.0%            JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      7   38.9%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      7  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      7  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3   16.7%        JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      3  100.0%          JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      3  100.0%            JS: +<anonymous> :1:20
+      6   25.0%      JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      6  100.0%        JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      6  100.0%          JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      4   66.7%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2   33.3%            JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     16    4.3%    JS: *_addListener node:events:548:22
+      7   43.8%      JS: *Readable.on node:internal/streams/readable:1125:33
+      2   28.6%        JS: ^clearIncoming node:_http_server:965:23
+      2  100.0%          JS: ^resOnFinish node:_http_server:978:21
+      2  100.0%            JS: *emit node:events:467:44
+      2   28.6%        JS: +resOnFinish node:_http_server:978:21
+      2  100.0%          JS: *onFinish node:_http_outgoing:1079:18
+      2  100.0%            JS: *afterWriteTick node:internal/streams/writable:691:24
+      2   28.6%        JS: *resOnFinish node:_http_server:978:21
+      2  100.0%          JS: *onFinish node:_http_outgoing:1079:18
+      2  100.0%            JS: *afterWriteTick node:internal/streams/writable:691:24
+      1   14.3%        JS: +clearIncoming node:_http_server:965:23
+      1  100.0%          JS: ^resOnFinish node:_http_server:978:21
+      1  100.0%            JS: *emit node:events:467:44
+      2   12.5%      JS: +Readable.on node:internal/streams/readable:1125:33
+      2  100.0%        JS: +socketListenerWrap node:_http_server:1199:37
+      2  100.0%          JS: +parserOnIncoming node:_http_server:1036:26
+      2  100.0%            JS: +parserOnHeadersComplete node:_http_common:72:33
+      2   12.5%      JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      2  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      2  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      2  100.0%            JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      2   12.5%      JS: *_release /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:348:11
+      2  100.0%        JS: *_handleReadyForQuery /Users/mac/Desktop/Node/LabNode/node_modules/pg/lib/client.js:302:23
+      2  100.0%          JS: *parse /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:24:10
+      2  100.0%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/index.js:11:23
+      1    6.3%      JS: *socketListenerWrap node:_http_server:1199:37
+      1  100.0%        JS: *parserOnIncoming node:_http_server:1036:26
+      1  100.0%          JS: *parserOnHeadersComplete node:_http_common:72:33
+      1    6.3%      JS: *parserOnIncoming node:_http_server:1036:26
+      1  100.0%        JS: *parserOnHeadersComplete node:_http_common:72:33
+      1    6.3%      JS: *addListener node:events:611:58
+      1  100.0%        JS: *_pulseQueue /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:119:14
+      1  100.0%          JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:195:26
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+     15    4.0%    JS: *scanLine /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:815:22
+     13   86.7%      JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+     12   92.3%        JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      7   58.3%          JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      5   71.4%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2   28.6%            JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      4   33.3%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      4  100.0%            JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1    8.3%          JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1  100.0%            JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1    7.7%        JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%          JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%            JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      2   13.3%      JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+      2  100.0%        JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      2  100.0%          JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2  100.0%            JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     14    3.7%    JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+     14  100.0%      JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      5   35.7%        JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      4   80.0%          JS: *onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      3   75.0%            JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      1   25.0%            JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:756:17
+      1   20.0%          JS: *emit node:events:467:44
+      1  100.0%            JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:267:45
+      3   21.4%        JS: +jsonParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/json.js:101:30
+      3  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      3  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      2   14.3%        JS: *error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      2  100.0%          JS: *onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      1   50.0%            JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:756:17
+      1   50.0%            JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      1    7.1%        JS: ^error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      1  100.0%          JS: *emit node:events:467:44
+      1  100.0%            JS: ^error /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:267:45
+      1    7.1%        JS: +urlencodedParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1    7.1%        JS: +authSessionMiddleware /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-session.js:58:31
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1    7.1%        JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+     14    3.7%    JS: *endReadableNT node:internal/streams/readable:1690:23
+     14  100.0%      JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+     12    3.2%    JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      3   25.0%      JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      2   66.7%        JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:165:29
+      2  100.0%          JS: +app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      1   50.0%            JS: +emit node:events:467:44
+      1   50.0%            JS: *emit node:events:467:44
+      1   33.3%        JS: *app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      1  100.0%          JS: *parserOnIncoming node:_http_server:1036:26
+      1  100.0%            JS: +parserOnHeadersComplete node:_http_common:72:33
+      2   16.7%      JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      2  100.0%        JS: *onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      2  100.0%          JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      2  100.0%            JS: ^onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+      1    8.3%      JS: ^error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      1  100.0%        JS: *emit node:events:467:44
+      1  100.0%          JS: ^error /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:267:45
+      1  100.0%            JS: +next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      1    8.3%      JS: +urlencodedParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      1    8.3%      JS: +jsonParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/json.js:101:30
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: +urlencodedParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1    8.3%      JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      1  100.0%        JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:165:29
+      1  100.0%          JS: +app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      1  100.0%            JS: *emit node:events:467:44
+      1    8.3%      JS: +expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: +query /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/query.js:39:24
+      1    8.3%      JS: *restoreUser /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-middleware.js:60:21
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: *authSessionMiddleware /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-session.js:58:31
+      1    8.3%      JS: *error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      1  100.0%        JS: *onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      1  100.0%          JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      1  100.0%            JS: ^onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+     11    2.9%    JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+     11  100.0%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     11  100.0%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     11  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      8   72.7%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      3   27.3%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      9    2.4%    JS: +end node:_http_outgoing:1084:45
+      7   77.8%      JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      6   85.7%        JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      6  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1   14.3%        JS: +done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      1  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2   22.2%      JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      2  100.0%        JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      2  100.0%          JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%            JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:121:16
+      9    2.4%    JS: *write_ node:_http_outgoing:942:16
+      9  100.0%      JS: *end node:_http_outgoing:1084:45
+      8   88.9%        JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      8  100.0%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      8  100.0%            JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1   11.1%        JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      1  100.0%          JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      1  100.0%            JS: *dispatch /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:101:45
+      9    2.4%    JS: *onFinish node:_http_outgoing:1079:18
+      9  100.0%      JS: *afterWriteTick node:internal/streams/writable:691:24
+      9  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      9    2.4%    JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/index.js:11:23
+      9  100.0%      JS: *readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      7   77.8%        JS: +onStreamRead node:internal/stream_base_commons:168:22
+      2   22.2%        JS: *onStreamRead node:internal/stream_base_commons:168:22
+      8    2.1%    JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      8  100.0%      JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      8  100.0%        JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      8  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      8  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      8    2.1%    JS: +write_ node:_http_outgoing:942:16
+      8  100.0%      JS: +end node:_http_outgoing:1084:45
+      7   87.5%        JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      5   71.4%          JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      5  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2   28.6%          JS: +done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      2  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   12.5%        JS: ^redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      1  100.0%          JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      1  100.0%            JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      8    2.1%    JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      6   75.0%      JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      6  100.0%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      6  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2   25.0%      JS: +done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      2  100.0%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      7    1.9%    JS: *end node:_http_outgoing:1084:45
+      3   42.9%      JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      3  100.0%        JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      3  100.0%          JS: *dispatch /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:101:45
+      3  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      2   28.6%      JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      2  100.0%        JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      2  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2   28.6%      JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      2  100.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      6    1.6%    JS: +writeHead node:_http_server:342:19
+      6  100.0%      JS: +write_ node:_http_outgoing:942:16
+      6  100.0%        JS: +end node:_http_outgoing:1084:45
+      2   33.3%          JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      2  100.0%            JS: +done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      2   33.3%          JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      2  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      1   16.7%          JS: ^send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      1  100.0%            JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      1   16.7%          JS: ^redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      1  100.0%            JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      6    1.6%    JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/index.js:11:23
+      6  100.0%      JS: *emit node:events:467:44
+      6  100.0%        JS: +addChunk node:internal/streams/readable:548:18
+      6  100.0%          JS: +readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      6  100.0%            JS: +onStreamRead node:internal/stream_base_commons:168:22
+      6    1.6%    JS: *writeHead node:_http_server:342:19
+      6  100.0%      JS: *write_ node:_http_outgoing:942:16
+      6  100.0%        JS: *end node:_http_outgoing:1084:45
+      3   50.0%          JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      3  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2   33.3%          JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      2  100.0%            JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      1   16.7%          JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      1  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      6    1.6%    JS: *readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      3   50.0%      JS: +onStreamRead node:internal/stream_base_commons:168:22
+      3   50.0%      JS: *onStreamRead node:internal/stream_base_commons:168:22
+      5    1.3%    JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      5  100.0%      JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      3   60.0%        JS: *dispatch /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:101:45
+      3  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      3  100.0%            JS: *restoreUser /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-middleware.js:60:21
+      2   40.0%        JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%          JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:121:16
+      2  100.0%            JS: +dispatch /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/route.js:101:45
+      5    1.3%    JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      5  100.0%      JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3   60.0%        JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      2   66.7%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:51:90
+      1   33.3%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      2   40.0%        JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      2  100.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      2  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      5    1.3%    JS: *emit node:events:467:44
+      2   40.0%      JS: +onFinish node:_http_outgoing:1079:18
+      2  100.0%        JS: +callback node:internal/streams/writable:762:63
+      2  100.0%          JS: +afterWrite node:internal/streams/writable:697:20
+      2  100.0%            JS: +afterWriteTick node:internal/streams/writable:691:24
+      2   40.0%      JS: +endReadableNT node:internal/streams/readable:1690:23
+      2  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1   20.0%      JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:267:45
+      1  100.0%        JS: +onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      1  100.0%          JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      1  100.0%            JS: ^onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+      5    1.3%    Builtin: CEntry_Return1_ArgvOnStack_NoBuiltinExit
+      4   80.0%      JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      4  100.0%        JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      4  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      4  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1   20.0%      JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      1  100.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      4    1.1%    JS: *parse /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/parser.js:24:10
+      3   75.0%      JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/index.js:11:23
+      3  100.0%        JS: *readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      2   66.7%          JS: +onStreamRead node:internal/stream_base_commons:168:22
+      1   33.3%          JS: *onStreamRead node:internal/stream_base_commons:168:22
+      1   25.0%      JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/pg-protocol/dist/index.js:11:23
+      1  100.0%        JS: *emit node:events:467:44
+      1  100.0%          JS: +addChunk node:internal/streams/readable:548:18
+      1  100.0%            JS: +readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      4    1.1%    JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      2   50.0%      JS: +handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:165:29
+      2  100.0%        JS: +app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      2  100.0%          JS: *emit node:events:467:44
+      2  100.0%            JS: +parserOnIncoming node:_http_server:1036:26
+      2   50.0%      JS: *app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      2  100.0%        JS: *parserOnIncoming node:_http_server:1036:26
+      2  100.0%          JS: *parserOnHeadersComplete node:_http_common:72:33
+      4    1.1%    JS: *afterWriteTick node:internal/streams/writable:691:24
+      4  100.0%      JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      4    1.1%    JS: *_destroy node:_http_incoming:221:55
+      4  100.0%      JS: *endReadableNT node:internal/streams/readable:1690:23
+      4  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      4    1.1%    JS: *Readable.on node:internal/streams/readable:1125:33
+      3   75.0%      JS: +resOnFinish node:_http_server:978:21
+      3  100.0%        JS: *onFinish node:_http_outgoing:1079:18
+      3  100.0%          JS: *afterWriteTick node:internal/streams/writable:691:24
+      3  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1   25.0%      JS: +socketListenerWrap node:_http_server:1199:37
+      1  100.0%        JS: *parserOnIncoming node:_http_server:1036:26
+      1  100.0%          JS: +parserOnHeadersComplete node:_http_common:72:33
+
+    283    1.2%  Builtin: LoadIC
+     27    9.5%    JS: *scanLine /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:815:22
+     27  100.0%      JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+     21   77.8%        JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      9   42.9%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      9  100.0%            JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      9   42.9%          JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      8   88.9%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   11.1%            JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      3   14.3%          JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      3  100.0%            JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      4   14.8%        JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      4  100.0%          JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      4  100.0%            JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      2    7.4%        Builtin: ArrayForEach
+      2  100.0%          JS: ^generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      2  100.0%            JS: ^compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     17    6.0%    JS: *Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+      8   47.1%      JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      4   50.0%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      4  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      4  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      4   50.0%        JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      4  100.0%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      2   50.0%            JS: ^<anonymous> :1:20
+      2   50.0%            JS: +<anonymous> :1:20
+      5   29.4%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      5  100.0%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      4   80.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3   75.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1   25.0%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      1   20.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      4   23.5%      JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      4  100.0%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      3   75.0%          JS: +<anonymous> :1:20
+      3  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   25.0%          JS: ^<anonymous> :1:20
+      1  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     11    3.9%    JS: *onwrite node:internal/streams/writable:613:17
+     11  100.0%      JS: *writevGeneric node:internal/stream_base_commons:123:23
+     10   90.9%        JS: *clearBuffer node:internal/streams/writable:742:21
+      6   60.0%          JS: *end node:_http_outgoing:1084:45
+      4   66.7%            JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      1   16.7%            JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      1   16.7%            JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      4   40.0%          JS: +end node:_http_outgoing:1084:45
+      2   50.0%            JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      2   50.0%            JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      1    9.1%        JS: +Socket._writeGeneric node:net:923:42
+      1  100.0%          JS: +doWrite node:internal/streams/writable:585:17
+      1  100.0%            JS: +clearBuffer node:internal/streams/writable:742:21
+     10    3.5%    JS: ^<anonymous> node:fs:197:10
+      8    2.8%    JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      8  100.0%      JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      2   25.0%        JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      2  100.0%          JS: *app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      2  100.0%            JS: *parserOnIncoming node:_http_server:1036:26
+      2   25.0%        JS: *authSessionMiddleware /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-session.js:58:31
+      2  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1   12.5%        JS: ^jsonParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/json.js:101:30
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1   12.5%        JS: ^error /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:115:39
+      1  100.0%          JS: *emit node:events:467:44
+      1  100.0%            JS: ^error /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:267:45
+      1   12.5%        JS: *restoreUser /Users/mac/Desktop/Node/LabNode/dist/middleware/auth-middleware.js:60:21
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1   12.5%        JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      8    2.8%    JS: *nextTick node:internal/process/task_queues:103:18
+      2   25.0%      JS: +emitReadable node:internal/streams/readable:817:22
+      2  100.0%        JS: +onEofChunk node:internal/streams/readable:786:20
+      2  100.0%          JS: +readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      2  100.0%            JS: +Readable.push node:internal/streams/readable:385:35
+      2   25.0%      JS: *resOnFinish node:_http_server:978:21
+      2  100.0%        JS: *onFinish node:_http_outgoing:1079:18
+      2  100.0%          JS: *afterWriteTick node:internal/streams/writable:691:24
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      2   25.0%      JS: *readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      2  100.0%        JS: +onStreamRead node:internal/stream_base_commons:168:22
+      1   12.5%      JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/pg-pool/index.js:393:8
+      1  100.0%        JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:35:58
+      1  100.0%          Builtin: GeneratorPrototypeNext
+      1  100.0%            JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/repositories/games-db-repository.js:4:46
+      1   12.5%      JS: *Readable.resume node:internal/streams/readable:1225:37
+      1  100.0%        JS: +resOnFinish node:_http_server:978:21
+      1  100.0%          JS: *onFinish node:_http_outgoing:1079:18
+      1  100.0%            JS: *afterWriteTick node:internal/streams/writable:691:24
+      7    2.5%    JS: ^onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+      7  100.0%      JS: ^<anonymous> node:fs:197:10
+      7    2.5%    JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      7  100.0%      JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      7  100.0%        JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      7  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      7  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:51:90
+      7    2.5%    JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+      4   57.1%      JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2   50.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      2   50.0%        JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      1   50.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1   50.0%          JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1  100.0%            JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      3   42.9%      JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      3  100.0%        JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      3  100.0%          JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      3  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6    2.1%    JS: ^parse /Users/mac/Desktop/Node/LabNode/node_modules/content-type/index.js:106:16
+      4   66.7%      JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      4  100.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      4  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3   75.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   25.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   16.7%      JS: ^setCharset /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/utils.js:246:41
+      1  100.0%        JS: ^send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      1  100.0%          JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      1  100.0%            JS: ^tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   16.7%      JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      1  100.0%        JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      1  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      6    2.1%    JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      6  100.0%      JS: ^onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+      5   83.3%        JS: ^<anonymous> node:fs:197:10
+      1   16.7%        JS: +<anonymous> node:fs:197:10
+      6    2.1%    JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      3   50.0%      JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      2   66.7%        JS: *app /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/express.js:38:21
+      2  100.0%          JS: *parserOnIncoming node:_http_server:1036:26
+      2  100.0%            JS: +parserOnHeadersComplete node:_http_common:72:33
+      1   33.3%        JS: *router /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:46:18
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1   16.7%      JS: +jsonParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/json.js:101:30
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: +urlencodedParser /Users/mac/Desktop/Node/LabNode/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1   16.7%      JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: *handle /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:136:31
+      1   16.7%      JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: *query /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/query.js:39:24
+      6    2.1%    JS: *SendStream /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:96:21
+      6  100.0%      JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      6  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      6  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      6  100.0%            JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      5    1.8%    JS: *readFileSync node:fs:435:22
+      2   40.0%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   50.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1   50.0%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      2   40.0%      JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      2  100.0%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      2  100.0%          JS: +<anonymous> :1:20
+      2  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   20.0%      JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      5    1.8%    JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      5  100.0%      JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      4   80.0%        JS: +<anonymous> :1:20
+      4  100.0%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      4  100.0%            JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1   20.0%        JS: ^<anonymous> :1:20
+      1  100.0%          JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      5    1.8%    JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      3   60.0%      JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      3  100.0%        JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      2   66.7%          JS: +<anonymous> :1:20
+      1   50.0%            JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1   50.0%            JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1   33.3%          JS: ^<anonymous> :1:20
+      1  100.0%            JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      2   40.0%      JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%        JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      4    1.4%    JS: +resOnFinish node:_http_server:978:21
+      4  100.0%      JS: *onFinish node:_http_outgoing:1079:18
+      4  100.0%        JS: *afterWriteTick node:internal/streams/writable:691:24
+      4  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      4    1.4%    JS: +Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+      4  100.0%      JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      3   75.0%        JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      3  100.0%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      3  100.0%            JS: ^<anonymous> :1:20
+      1   25.0%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      4    1.4%    JS: +SendStream /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:96:21
+      4  100.0%      JS: +serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      4  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      4  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      4  100.0%            JS: +expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      4    1.4%    JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      2   50.0%      JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      2  100.0%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      2  100.0%          JS: +<anonymous> :1:20
+      2  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   25.0%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1   25.0%      JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%        JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1  100.0%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%            JS: ^<anonymous> :1:20
+      3    1.1%    JS: ^clearIncoming node:_http_server:965:23
+      1   33.3%      JS: ^resOnFinish node:_http_server:978:21
+      1  100.0%        JS: +emit node:events:467:44
+      1  100.0%          JS: +onFinish node:_http_outgoing:1079:18
+      1  100.0%            JS: ^callback node:internal/streams/writable:762:63
+      1   33.3%      JS: +emit node:events:467:44
+      1  100.0%        JS: +endReadableNT node:internal/streams/readable:1690:23
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1   33.3%      JS: *emit node:events:467:44
+      1  100.0%        JS: +endReadableNT node:internal/streams/readable:1690:23
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      3    1.1%    JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      3  100.0%      JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%        JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      3  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3    1.1%    JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%      JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      3  100.0%        JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3  100.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      3    1.1%    JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      3  100.0%      JS: +<anonymous> :1:20
+      3  100.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3    1.1%    JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      2   66.7%      JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1   50.0%        JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%          JS: ^<anonymous> :1:20
+      1  100.0%            JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1   50.0%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%          JS: ^<anonymous> :1:20
+      1  100.0%            JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1   33.3%      JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%        JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1  100.0%            JS: ^render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3    1.1%    JS: *stat node:fs:1569:14
+      2   66.7%      JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      2  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      2  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      2  100.0%            JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      1   33.3%      JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:756:17
+      1  100.0%        JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      3    1.1%    JS: *emitReadable node:internal/streams/readable:817:22
+      2   66.7%      JS: *onEofChunk node:internal/streams/readable:786:20
+      2  100.0%        JS: *readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      1   50.0%          JS: +parserOnMessageComplete node:_http_common:137:33
+      1   50.0%          JS: *parserOnMessageComplete node:_http_common:137:33
+      1   33.3%      JS: +onEofChunk node:internal/streams/readable:786:20
+      1  100.0%        JS: *readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      1  100.0%          JS: +parserOnMessageComplete node:_http_common:137:33
+      3    1.1%    JS: *emit node:events:467:44
+      2   66.7%      JS: +onFinish node:_http_outgoing:1079:18
+      2  100.0%        JS: +callback node:internal/streams/writable:762:63
+      2  100.0%          JS: +afterWrite node:internal/streams/writable:697:20
+      2  100.0%            JS: +afterWriteTick node:internal/streams/writable:691:24
+      1   33.3%      JS: +error /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:267:45
+      1  100.0%        JS: +onStatError /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:412:57
+      1  100.0%          JS: ^next /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:727:17
+      1  100.0%            JS: ^onstat /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:716:33
+      3    1.1%    JS: *_destroy node:_http_incoming:221:55
+      3  100.0%      JS: *endReadableNT node:internal/streams/readable:1690:23
+      3  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      3    1.1%    Builtin: GeneratorPrototypeNext
+      2   66.7%      JS: +fulfilled /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:5:27
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1   33.3%      JS: ^<anonymous> /Users/mac/Desktop/Node/LabNode/dist/business/reviews-business-layer.js:4:46
+      1  100.0%        Builtin: PromiseConstructor
+      1  100.0%          JS: +getGameReviews /Users/mac/Desktop/Node/LabNode/dist/business/reviews-business-layer.js:15:19
+      1  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:51:90
+
+    265    1.2%  Builtin: StringAdd_CheckNone
+    124   46.8%    JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+     97   78.2%      JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     54   55.7%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     52   96.3%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     49   94.2%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3    5.8%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      2    3.7%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     31   32.0%        JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     26   83.9%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     26  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      4   12.9%          JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      4  100.0%            JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1    3.2%          JS: *exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+     12   12.4%        JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     12  100.0%          JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+     11   91.7%            JS: +<anonymous> :1:20
+      1    8.3%            JS: ^<anonymous> :1:20
+     26   21.0%      JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+     26  100.0%        JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     26  100.0%          JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+     21   80.8%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3   11.5%            JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      2    7.7%            JS: ^includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+     58   21.9%    Builtin: StringPrototypeReplace
+     36   62.1%      JS: *scanLine /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:815:22
+     36  100.0%        JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+     30   83.3%          JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     14   46.7%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+     10   33.3%            JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      6   20.0%            JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      6   16.7%          JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      6  100.0%            JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+     15   25.9%      JS: *Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+      6   40.0%        JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      6  100.0%          JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      5   83.3%            JS: +<anonymous> :1:20
+      1   16.7%            JS: ^<anonymous> :1:20
+      6   40.0%        JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      3   50.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      3   50.0%          JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      3  100.0%            JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      3   20.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      5    8.6%      JS: +createRegex /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:560:25
+      5  100.0%        JS: +Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+      5  100.0%          JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      4   80.0%            JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1   20.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1    1.7%      JS: ^createRegex /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:560:25
+      1  100.0%        JS: ^Template /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:509:18
+      1  100.0%          JS: ^compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:381:35
+      1  100.0%            JS: ^handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      1    1.7%      JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+     10    3.8%    JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      6   60.0%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6  100.0%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      6  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3   50.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      2   33.3%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      1   16.7%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      3   30.0%      JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      2   66.7%        JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%          JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2  100.0%            JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1   33.3%        JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1  100.0%          JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%            JS: ^<anonymous> :1:20
+      1   10.0%      JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1  100.0%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%          JS: +<anonymous> :1:20
+      1  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      6    2.3%    JS: *getIncludePath /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:156:24
+      6  100.0%      JS: *includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      6  100.0%        JS: +include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      4   66.7%          JS: +<anonymous> :1:20
+      4  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2   33.3%          JS: ^<anonymous> :1:20
+      2  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      5    1.9%    JS: +<anonymous> :22:30
+      5  100.0%      JS: +<anonymous> :1:20
+      2   40.0%        JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      2  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      2   40.0%        JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%          JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1   50.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   50.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   20.0%        JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      5    1.9%    JS: *View /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:52:14
+      5  100.0%      JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      4   80.0%        JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      3   75.0%          JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:51:90
+      3  100.0%            Builtin: GeneratorPrototypeNext
+      1   25.0%          JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      1  100.0%            Builtin: GeneratorPrototypeNext
+      1   20.0%        JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      1  100.0%          Builtin: GeneratorPrototypeNext
+      1  100.0%            JS: *fulfilled /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:5:27
+      4    1.5%    JS: *writeHead node:_http_server:342:19
+      4  100.0%      JS: *write_ node:_http_outgoing:942:16
+      4  100.0%        JS: *end node:_http_outgoing:1084:45
+      2   50.0%          JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      2  100.0%            JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   25.0%          JS: +send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      1  100.0%            JS: ^done /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1043:27
+      1   25.0%          JS: +redirect /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:946:33
+      1  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/app.js:34:27
+      4    1.5%    JS: *send /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:111:25
+      4  100.0%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      4  100.0%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2   50.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      2  100.0%            JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      2   50.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   50.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1   50.0%            JS: *<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      3    1.1%    JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      1   33.3%      JS: ^tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%        JS: ^exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%          JS: ^render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:133:40
+      1  100.0%            JS: ^tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1   33.3%      JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%        JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1  100.0%          JS: +tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      1  100.0%            JS: ^render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1   33.3%      JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      1  100.0%        JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      1  100.0%          JS: ^<anonymous> :1:20
+      1  100.0%            JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      3    1.1%    JS: +getIncludePath /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:156:24
+      3  100.0%      JS: +includeFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:309:21
+      3  100.0%        JS: ^include /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:696:30
+      2   66.7%          JS: ^<anonymous> :1:20
+      2  100.0%            JS: ^anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      1   33.3%          JS: +<anonymous> :1:20
+      1  100.0%            JS: +anonymous /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:695:59
+      3    1.1%    JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      3  100.0%      JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      3  100.0%        JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      2   66.7%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      2  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1   33.3%          JS: ^tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: ^exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      3    1.1%    JS: +<anonymous> :1:20
+      3  100.0%      JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%        JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      3  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      3  100.0%            JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      3    1.1%    JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:742:32
+      1   33.3%      JS: +generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%        JS: +compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%          JS: +handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%            JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1   33.3%      JS: *compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%        JS: *handleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:210:21
+      1  100.0%          JS: +tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      1  100.0%            JS: +exports.renderFile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:441:31
+      1   33.3%      Builtin: ArrayForEach
+      1  100.0%        JS: ^generateSource /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:721:28
+      1  100.0%          JS: ^compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:571:21
+      1  100.0%            JS: ^compile /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:381:35
+      3    1.1%    JS: *tryHandleCache /Users/mac/Desktop/Node/LabNode/node_modules/ejs/lib/ejs.js:254:24
+      3  100.0%      JS: *tryRender /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:655:19
+      2   66.7%        JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      2  100.0%          JS: *render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1   50.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:51:90
+      1   50.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      1   33.3%        JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1  100.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      3    1.1%    JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      3  100.0%      JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      3  100.0%        JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      3  100.0%          JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+      3  100.0%            JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      3    1.1%    JS: *join node:path:1169:7
+      1   33.3%      JS: +pipe /Users/mac/Desktop/Node/LabNode/node_modules/send/index.js:505:43
+      1  100.0%        JS: +serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      1  100.0%          JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1   33.3%      JS: +View /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/view.js:52:14
+      1  100.0%        JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/application.js:548:29
+      1  100.0%          JS: +render /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/response.js:1026:29
+      1  100.0%            JS: +<anonymous> /Users/mac/Desktop/Node/LabNode/dist/routers/game-router.js:19:87
+      1   33.3%      JS: *serveStatic /Users/mac/Desktop/Node/LabNode/node_modules/serve-static/index.js:72:31
+      1  100.0%        JS: *trim_prefix /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          JS: *next /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            JS: *expressInit /Users/mac/Desktop/Node/LabNode/node_modules/express/lib/middleware/init.js:29:30
+
