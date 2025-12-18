@@ -2,6 +2,7 @@ import { Router, Request, Response } from 'express';
 import { gameService } from '../business/games-business-layer';
 import { reviewService } from '../business/reviews-business-layer';
 import { inputValidator } from '../validator/input-validator';
+import { requireAuth } from '../middleware/auth-session';
 
 export const gameRouter = Router();
 
@@ -15,9 +16,9 @@ gameRouter.get('/', async (req, res) => {
     }
 });
 
-gameRouter.get('/new', (req, res) => res.render('create-game'));
+gameRouter.get('/new', requireAuth, (req, res) => res.render('create-game'));
 
-gameRouter.post('/', async (req, res) => {
+gameRouter.post('/', requireAuth, async (req, res) => {
     try {
         const { title, developer, year, genre, description } = req.body;
         await gameService.createGame(title, developer, Number(year), genre, description);
@@ -28,7 +29,7 @@ gameRouter.post('/', async (req, res) => {
     }
 });
 
-gameRouter.post('/:id/delete', async (req, res) => {
+gameRouter.post('/:id/delete', requireAuth, async (req, res) => {
     try {
         await gameService.deleteGame(Number(req.params.id));
         res.redirect('/games');
@@ -53,13 +54,14 @@ gameRouter.get('/:id', async (req, res) => {
     }
 });
 
-gameRouter.post('/:id/reviews', async (req, res) => {
+gameRouter.post('/:id/reviews', requireAuth, async (req, res) => {
     try {
         const error = inputValidator.validateReview(req.body);
         if (error) return res.status(400).send(error);
 
         const id = Number(req.params.id);
-        const { author, rating, comment } = req.body;
+        const { rating, comment } = req.body;
+        const author = req.user?.login || 'Anonymous';
         await reviewService.addReview(id, author, Number(rating), comment);
         res.redirect('/games/' + id);
     } catch (e) {
